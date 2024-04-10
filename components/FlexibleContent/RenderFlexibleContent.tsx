@@ -23,7 +23,7 @@ const RenderFlexibleContent: FC = () => {
 		// [`${FlexibleContent}_VideoBlock`]: "VideoBlock",
 		// [`${FlexibleContent}_OurClients`]: "OurClients",
 		// [`${FlexibleContent}_ContactInfo`]: "ContactInfo",
-		// [`${FlexibleContent}_ContactForm`]: "ContactForm",
+		[`${FlexibleContent}_ContactForm`]: "ContactForm",
 		[`${FlexibleContent}_OurServices`]: "OurServices",
 		// [`${FlexibleContent}_GallerySlider`]: "GallerySlider",
 		[`${FlexibleContent}_GettingStarted`]: "GettingStarted",

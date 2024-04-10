@@ -366,13 +366,30 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 								/>
 							</motion.div>
 						</motion.div>
+						<motion.div
+							initial={initial}
+							variants={stagger}
+							whileInView="animate"
+							viewport={{once: true}}
+							className="mt-8 w-full"
+						>
+							<iframe
+								width="100%"
+								height="350"
+								loading="lazy"
+								style={{border: "0"}}
+								allowFullScreen={true}
+								referrerPolicy="no-referrer-when-downgrade"
+								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9913.921674101828!2d-1.7649314!3d51.5960854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487147ef35929fdd%3A0xc1fa2531f8fcf27e!2sMax%20Lynn%20Carpentry%20LTD!5e0!3m2!1sen!2suk!4v1712757136508!5m2!1sen!2suk"
+							></iframe>
+						</motion.div>
 					</div>
 					<Formik
 						onSubmit={formik?.onSubmit}
 						initialValues={formik?.initialValues}
 						className="w-full lg:w-1/2"
 					>
-						<Form className="lg:container mx-auto py-10 md:max-w-xl">
+						<Form className="lg:container mx-auto py-10 px-6 md:max-w-xl shadow-2xl bg-primary-default">
 							{loading ? (
 								<motion.div
 									initial={initialTwo}
@@ -380,7 +397,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 									className="flex items-center justify-center my-4 mb-8 gap-x-2"
 								>
-									<h3 className="text-xl font-semibold uppercase text-primary-default">
+									<h3 className="text-xl font-semibold uppercase text-white">
 										Sending Message...
 									</h3>
 								</motion.div>
@@ -391,7 +408,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 									className="flex items-center justify-center my-4 mb-8 gap-x-2"
 								>
-									<h3 className="text-xl font-semibold text-center uppercase text-accent-default">
+									<h3 className="text-xl font-semibold text-center uppercase text-white">
 										Message Sent!
 									</h3>
 								</motion.div>
@@ -402,7 +419,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 									className="flex items-center justify-center my-4 mb-8 gap-x-2"
 								>
-									<h3 className="text-xl font-semibold text-center uppercase text-accent-two">
+									<h3 className="text-xl font-semibold text-center uppercase text-primary-darker">
 										Error Message: Something went wrong with sending your
 										message. Please try again.
 									</h3>
@@ -418,7 +435,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-extrabold text-lg lg:text-xl"
+										className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-white text-center font-semibold text-lg md:text-xl"
 									>
 										Get In Touch
 									</motion.h3>
@@ -441,7 +458,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									>
 										{formik?.touched?.firstName && formik?.errors?.firstName ? (
 											<div>
-												<p className="py-1 text-left text-tiny text-accent-two ">
+												<p className="py-1 text-left text-tiny text-white">
 													{formik?.errors?.firstName}
 												</p>
 											</div>
@@ -453,7 +470,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 											onBlur={formik?.handleBlur}
 											onChange={formik?.handleChange}
 											value={formik?.values?.firstName}
-											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two focus:ring-[1px] focus:ring-blue-darker"
+											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker focus:ring-[1px] focus:ring-primary-darker"
 										/>
 									</motion.div>
 									<motion.div
@@ -464,7 +481,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									>
 										{formik?.touched?.lastName && formik?.errors?.lastName ? (
 											<div>
-												<p className="py-1 text-left text-tiny text-accent-two ">
+												<p className="py-1 text-left text-tiny text-white ">
 													{formik?.errors?.lastName}
 												</p>
 											</div>
@@ -476,7 +493,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 											onBlur={formik?.handleBlur}
 											onChange={formik?.handleChange}
 											value={formik?.values?.lastName}
-											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two focus:ring-[1px] focus:ring-blue-darker"
+											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker focus:ring-[1px] focus:ring-primary-darker"
 										/>
 									</motion.div>
 								</div>
@@ -490,7 +507,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										{formik?.touched?.phoneNumber &&
 										formik?.errors?.phoneNumber ? (
 											<div>
-												<p className="py-1 text-left text-tiny text-accent-two ">
+												<p className="py-1 text-left text-tiny text-white ">
 													{formik?.errors?.phoneNumber}
 												</p>
 											</div>
@@ -503,7 +520,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 											onBlur={formik?.handleBlur}
 											onChange={formik?.handleChange}
 											value={formik?.values?.phoneNumber}
-											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two focus:ring-[1px] focus:ring-blue-darker"
+											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker focus:ring-[1px] focus:ring-primary-darker"
 										/>
 									</motion.div>
 									<motion.div
@@ -514,7 +531,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									>
 										{formik?.touched?.subject && formik?.errors?.subject ? (
 											<div>
-												<p className="py-1 text-left text-tiny text-accent-two ">
+												<p className="py-1 text-left text-tiny text-white">
 													{formik?.errors?.subject}
 												</p>
 											</div>
@@ -527,7 +544,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 											onBlur={formik?.handleBlur}
 											onChange={formik?.handleChange}
 											value={formik?.values?.subject}
-											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two focus:ring-[1px] focus:ring-blue-darker"
+											className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker focus:ring-[1px] focus:ring-primary-darker"
 										/>
 									</motion.div>
 								</div>
@@ -539,7 +556,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 								>
 									{formik?.touched?.email && formik?.errors?.email ? (
 										<div>
-											<p className="py-1 text-left text-tiny text-accent-two ">
+											<p className="py-1 text-left text-tiny text-white ">
 												{formik?.errors?.email}
 											</p>
 										</div>
@@ -552,7 +569,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										onBlur={formik?.handleBlur}
 										onChange={formik?.handleChange}
 										value={formik?.values?.email}
-										className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two focus:ring-[1px] focus:ring-blue-darker"
+										className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker focus:ring-[1px] focus:ring-primary-darker"
 									/>
 								</motion.div>
 								<motion.div
@@ -564,7 +581,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									{formik?.touched?.selectedServices &&
 									formik?.errors?.selectedServices ? (
 										<div>
-											<p className="py-1 text-left text-tiny text-accent-two ">
+											<p className="py-1 text-left text-tiny text-white ">
 												{formik?.errors?.selectedServices}
 											</p>
 										</div>
@@ -577,7 +594,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										onBlur={formik?.handleBlur}
 										onChange={formik?.handleChange}
 										value={formik?.values?.selectedServices}
-										className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two focus:ring-[1px] focus:ring-blue-darker"
+										className="px-4 py-3 w-full text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker focus:ring-[1px] focus:ring-primary-darker"
 									>
 										{globalContext?.servicesSublinks?.length > 0 ? (
 											globalContext?.servicesSublinks?.map(
@@ -601,7 +618,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 								>
 									{formik?.touched?.message && formik?.errors?.message ? (
 										<div>
-											<p className="py-1 text-left text-tiny text-accent-two ">
+											<p className="py-1 text-left text-tiny text-white">
 												{formik?.errors?.message}
 											</p>
 										</div>
@@ -614,13 +631,20 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										onBlur={formik?.handleBlur}
 										onChange={formik?.handleChange}
 										value={formik?.values?.message}
-										className="p-4 w-full h-48  text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-accent-two focus:border-accent-two resize-none focus:ring-[1px] focus:ring-blue-darker"
+										className="p-4 w-full h-48  text-darkGrey placeholder-darkGrey bg-white bg-opacity-90 outline-none border-[1px] border-darkGrey active:border-primary-darker focus:border-primary-darker resize-none focus:ring-[1px] focus:ring-primary-darker"
 									/>
 								</motion.div>
 								<motion.div
 									initial={initial}
 									whileInView={fadeInUp}
 									viewport={{once: true}}
+									className={
+										formik?.touched?.firstName ||
+										formik?.touched?.lastName ||
+										formik?.touched?.email
+											? "block"
+											: "hidden"
+									}
 								>
 									<ReCAPTCHA
 										sitekey={`6Lcb2rQpAAAAAIyP_tcS5urSOS2opAg18WTXpebR`}
@@ -643,7 +667,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										reCaptchaResult === null ||
 										reCaptchaResult === undefined
 									}
-									className="w-full text-white disabled:bg-opacity-20 disabled:cursor-not-allowed"
+									className="w-fit mx-auto lg:mx-0 text-white font-semibold tracking-wide disabled:bg-opacity-20 disabled:cursor-not-allowed"
 									type="submit"
 								>
 									<span
