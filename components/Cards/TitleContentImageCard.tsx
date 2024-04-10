@@ -1,20 +1,15 @@
 // Imports
-import fadeInUp, {
-	fadeIn,
-	stagger,
-	initial,
-	initialTwo,
-	arrayLoopStaggerChildren,
-} from "../../animations/animations";
-import {FC, Fragment} from "react";
+import {FC} from "react";
 import Link from "next/link";
 import {motion} from "framer-motion";
 import {ITitleContentImageCard} from "@/types/components";
+import {fadeInUp, stagger, initial} from "../../animations/animations";
+
+// Components
 import Paragraph from "../Elements/Paragraph";
 
 const TitleContentImageCard: FC<ITitleContentImageCard> = ({
 	title,
-	subtitle,
 	textTitle,
 	paragraph,
 	buttonLink,
@@ -27,7 +22,7 @@ const TitleContentImageCard: FC<ITitleContentImageCard> = ({
 				whileInView="animate"
 				viewport={{once: true}}
 				className={`flex flex-col items-center ${
-					title && subtitle ? "pt-2 pb-10 lg:py-10" : "py-10"
+					title ? "pt-2 pb-10 lg:py-10" : "py-10"
 				} px-4 lg:items-baseline`}
 			>
 				<motion.h3

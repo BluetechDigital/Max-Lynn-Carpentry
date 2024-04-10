@@ -84,7 +84,6 @@ export const getAllFlexibleContentComponents = async (
             									fieldGroupName
             									title
             									textTitle
-            									subtitle
             									paragraph
             									image {
             										altText

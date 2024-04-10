@@ -1,13 +1,10 @@
 // Imports
 import {
-	initial,
-	fadeInUp,
 	slideInLeftInitial,
 	slideInRightFinish,
 	slideInRightInitial,
 } from "../animations/animations";
 import {FC} from "react";
-import Image from "next/image";
 import {motion} from "framer-motion";
 import {ITitleContentImage} from "@/types/components";
 
@@ -17,7 +14,6 @@ import TitleContentImageCard from "./Cards/TitleContentImageCard";
 const TitleContentImage: FC<ITitleContentImage> = ({
 	title,
 	image,
-	subtitle,
 	textTitle,
 	paragraph,
 	buttonLink,
@@ -80,7 +76,6 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 					>
 						<TitleContentImageCard
 							title={title}
-							subtitle={subtitle}
 							textTitle={textTitle}
 							paragraph={paragraph}
 							buttonLink={buttonLink}

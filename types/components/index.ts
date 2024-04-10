@@ -378,7 +378,6 @@ export type IAboutContentImage = {
 };
 export type ITitleContentImage = {
 	title: string;
-	subtitle: string;
 	paragraph: string;
 	textTitle: string;
 	displayContentOption: string;
@@ -543,7 +542,6 @@ export type IOurServicesCardTwo = {
 };
 export type ITitleContentImageCard = {
 	title: string;
-	subtitle: string;
 	paragraph: string;
 	textTitle: string;
 	buttonLink: {

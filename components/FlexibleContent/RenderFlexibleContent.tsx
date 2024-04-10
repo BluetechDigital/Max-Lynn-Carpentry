@@ -25,7 +25,7 @@ const RenderFlexibleContent: FC = () => {
 		// [`${FlexibleContent}_ContactInfo`]: "ContactInfo",
 		[`${FlexibleContent}_ContactForm`]: "ContactForm",
 		[`${FlexibleContent}_OurServices`]: "OurServices",
-		// [`${FlexibleContent}_GallerySlider`]: "GallerySlider",
+		[`${FlexibleContent}_GallerySlider`]: "GallerySlider",
 		[`${FlexibleContent}_GettingStarted`]: "GettingStarted",
 		[`${FlexibleContent}_TitleParagraph`]: "TitleParagraph",
 		// [`${FlexibleContent}_Accreditations`]: "Accreditations",
