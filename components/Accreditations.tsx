@@ -62,8 +62,16 @@ const Accreditations: FC<IAccreditations> = ({
 										<Image
 											src={item?.image?.sourceUrl}
 											alt={`${item?.image?.altText}`}
-											width={item?.image?.mediaDetails?.width}
-											height={item?.image?.mediaDetails?.height}
+											width={
+												item?.image?.mediaDetails?.width
+													? item?.image?.mediaDetails?.width
+													: 500
+											}
+											height={
+												item?.image?.mediaDetails?.height
+													? item?.image?.mediaDetails?.height
+													: 500
+											}
 											className={
 												item?.image?.sourceUrl
 													? `block object-contain object-center w-full h-full max-h-[90px]`

@@ -42,7 +42,7 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 							{title}
 						</motion.h3>
 					</motion.div>
-					<div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 px-0 md:px-4 gap-6 items-start justify-center">
+					<div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 py-6 px-0 md:px-4 gap-4 items-start justify-center">
 						{servicesGrid?.length > 0 ? (
 							servicesGrid?.map((item: any, keys: number) => (
 								<Fragment key={keys}>

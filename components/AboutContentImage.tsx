@@ -113,8 +113,12 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 						<Image
 							src={image?.sourceUrl}
 							alt={`${image?.altText}`}
-							width={image?.mediaDetails?.width}
-							height={image?.mediaDetails?.height}
+							width={
+								image?.mediaDetails?.width ? image?.mediaDetails?.width : 500
+							}
+							height={
+								image?.mediaDetails?.height ? image?.mediaDetails?.height : 500
+							}
 							className={
 								image?.sourceUrl
 									? `block object-cover object-center w-full h-[500px] 2xl:h-[600px]`

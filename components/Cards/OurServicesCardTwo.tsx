@@ -19,13 +19,18 @@ const OurServicesCardTwo: FC<IOurServicesCardTwo> = ({
 				<Image
 					className={
 						image?.sourceUrl
-							? "bg-lightGreyTwo mx-auto rounded-full w-44 h-44 mb-6 object-cover object-center"
+							? "bg-lightGreyTwo mx-auto w-full h-28 mb-6 object-cover object-center"
 							: "hidden"
 					}
 					src={image?.sourceUrl}
 					alt={`${image?.altText}`}
-					width={image?.mediaDetails?.width}
-					height={image?.mediaDetails?.height}
+					width={image?.mediaDetails?.width ? image?.mediaDetails?.width : 500}
+					height={
+						image?.mediaDetails?.height ? image?.mediaDetails?.height : 500
+					}
+					style={{
+						clipPath: `polygon(94% 0, 100% 6%, 100% 100%, 0 100%, 0 0)`,
+					}}
 				/>
 				<motion.h3
 					initial={initial}

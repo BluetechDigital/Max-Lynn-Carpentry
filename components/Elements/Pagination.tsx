@@ -68,8 +68,16 @@ const Pagination: FC<IPagination> = ({
 										<Image
 											src={item?.sourceUrl}
 											alt={`${item?.altText}`}
-											width={item?.mediaDetails?.width}
-											height={item?.mediaDetails?.height}
+											width={
+												item?.mediaDetails?.width
+													? item?.mediaDetails?.width
+													: 500
+											}
+											height={
+												item?.mediaDetails?.height
+													? item?.mediaDetails?.height
+													: 500
+											}
 											className={
 												item?.sourceUrl
 													? `block object-cover object-center w-full h-[175px] ${

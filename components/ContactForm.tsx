@@ -389,7 +389,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 						initialValues={formik?.initialValues}
 						className="w-full lg:w-1/2"
 					>
-						<Form className="lg:container mx-auto py-10 px-6 md:max-w-xl shadow-2xl bg-primary-default">
+						<Form className="lg:container mx-auto py-10 px-6 xl:px-10 md:max-w-xl bg-primary-default">
 							{loading ? (
 								<motion.div
 									initial={initialTwo}
