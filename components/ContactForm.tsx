@@ -162,7 +162,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 					backgroundImage: `url("/svg/background/layered-peaks-haikei-lightgrey-grey-one.svg")`,
 				}}
 			>
-				<div className="container mx-auto flex flex-col lg:flex-row items-baseline ">
+				<div className="lg:container mx-auto flex flex-col lg:flex-row items-baseline ">
 					<div className="w-full lg:w-1/2 sm:p-6 flex flex-col">
 						<motion.div
 							initial={initial}
@@ -368,7 +368,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 						initialValues={formik?.initialValues}
 						className="w-full lg:w-1/2"
 					>
-						<Form className="container mx-auto py-10 md:max-w-xl">
+						<Form className="lg:container mx-auto py-10 md:max-w-xl">
 							{loading ? (
 								<motion.div
 									initial={initialTwo}
@@ -619,7 +619,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 								>
 									<ReCAPTCHA
-										sitekey={`6LdhQXMpAAAAAM8HcXfwQs2JOgVKLeNaKPYgYQvF`}
+										sitekey={`6Lcb2rQpAAAAAIyP_tcS5urSOS2opAg18WTXpebR`}
 										onChange={handleReCaptchaChange}
 									/>
 								</motion.div>

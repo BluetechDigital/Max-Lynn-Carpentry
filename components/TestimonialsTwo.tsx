@@ -35,7 +35,7 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 								initial={initial}
 								whileInView={fadeInUp}
 								viewport={{once: true}}
-								className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 leading-tight text-center text-base text-primary-default text-center lg:text-left"
+								className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 leading-tight text-center text-base text-primary-default lg:text-left"
 							>
 								{subtitle}
 							</motion.h4>
@@ -43,7 +43,7 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 								initial={initial}
 								whileInView={fadeInUp}
 								viewport={{once: true}}
-								className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-extrabold text-lg lg:text-xl text-center lg:text-left"
+								className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black font-extrabold text-lg lg:text-xl text-center lg:text-left"
 							>
 								{title}
 							</motion.h3>

@@ -58,7 +58,7 @@ const Navbar: FC = () => {
 			<nav className={styles.navbar + ` z-[999] h-fit w-full fixed`}>
 				<NoticeInfoBanner />
 				<div className="flex p-0 bg-white">
-					<div className="container mx-auto bg-white w-full lg:w-[40%]">
+					<div className="lg:container mx-auto bg-white w-full lg:w-[40%]">
 						<Link
 							href="/"
 							target="_blank"

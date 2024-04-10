@@ -9,7 +9,6 @@ import {
 	initialTwo,
 } from "@/animations/animations";
 import Link from "next/link";
-import Image from "next/image";
 import {motion} from "framer-motion";
 import {useRouter} from "next/router";
 import React, {useState, FC} from "react";
@@ -25,7 +24,6 @@ import styles from "@/styles/components/RequestAppointmentForm.module.scss";
 // Components
 import Title from "./Elements/Title";
 import Paragraph from "./Elements/Paragraph";
-import RenderStars from "./Elements/RenderStars";
 
 const RequestAppointmentForm: FC<IRequestAppointmentForm> = ({
 	title,
@@ -164,7 +162,7 @@ const RequestAppointmentForm: FC<IRequestAppointmentForm> = ({
 								initial={initial}
 								whileInView={fadeInUp}
 								viewport={{once: true}}
-								className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 text-center lg:text-left text-base text-primary-default text-center"
+								className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 text-center lg:text-left text-base text-primary-default"
 							>
 								{subtitle}
 							</motion.h4>
@@ -177,58 +175,7 @@ const RequestAppointmentForm: FC<IRequestAppointmentForm> = ({
 								tailwindStyling="mb-3 mx-auto lg:mx-0 max-w-full lg:max-w-md xl:max-w-xl mx-auto xl:mx-0 text-black text-base text-center lg:text-left"
 							/>
 						</motion.div>
-						<motion.div
-							initial={initial}
-							variants={stagger}
-							whileInView="animate"
-							viewport={{once: true}}
-							className="w-fit max-w-lg lg:max-w-full mx-auto lg:mx-0 mb-6 p-0 grid sm:grid-cols-2 md:grid-cols-3 items-center justify-center lg:justify-start gap-6"
-						>
-							<div className="flex items-center justify-center lg:justify-start gap-3">
-								<Image
-									className="my-auto lg:mx-0 rounded-full w-10 h-10 object-cover object-center"
-									alt={`Facebook reviews logo`}
-									src="/img/facebook-logo-blue-circle-large-white.webp"
-									width={500}
-									height={500}
-								/>
-								<div className="flex flex-col gap-1">
-									<div className="flex items-center justify-start gap-1">
-										<RenderStars rating={5} />
-									</div>
-									<h3 className="text-tiny font-PlusJakartaSans text-black">
-										5.0 Rating
-									</h3>
-								</div>
-							</div>
-							<div className="flex items-center justify-center lg:justify-start gap-3">
-								<Image
-									className="bg-white my-auto lg:mx-0 rounded-full p-1 w-10 h-10 object-cover object-center"
-									alt={`Google reviews logo`}
-									src="/svg/google-tile-logo.svg"
-									width={500}
-									height={500}
-								/>
-								<div className="flex flex-col gap-1">
-									<div className="flex items-center justify-start gap-1">
-										<RenderStars rating={5} />
-									</div>
-									<h3 className="text-tiny font-PlusJakartaSans text-black">
-										5.0 Rating
-									</h3>
-								</div>
-							</div>
-							<div className="flex items-center justify-center lg:justify-start gap-0 basis-1/2">
-								<Image
-									className="my-auto lg:mx-0 p-1 w-full h-10 object-cover object-center"
-									alt={`Trustpilot reviews logo`}
-									src="/svg/trustpilot-logo-black.svg"
-									width={500}
-									height={500}
-								/>
-							</div>
-						</motion.div>
-						<div className="flex flex-col xl:flex-row gap-8 items-center justify-center gap-4 xl:gap-12 lg:justify-start">
+						<div className="flex flex-col xl:flex-row gap-8 items-center justify-center xl:gap-12 lg:justify-start">
 							<motion.div
 								initial={initial}
 								variants={stagger}
@@ -544,7 +491,7 @@ const RequestAppointmentForm: FC<IRequestAppointmentForm> = ({
 									}
 								>
 									<ReCAPTCHA
-										sitekey={`6LfF-pwpAAAAAGNKKz5Ae7Cbh18aLprnrq3r-ZEe`}
+										sitekey={`6Lcb2rQpAAAAAIyP_tcS5urSOS2opAg18WTXpebR`}
 										onChange={handleReCaptchaChange}
 									/>
 								</motion.div>

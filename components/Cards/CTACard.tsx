@@ -18,7 +18,7 @@ const CTACard: FC<ICTACard> = ({title, paragraph, buttonLink}) => {
 					backgroundImage: `url("/svg/background/layered-peaks-haikei-blue-bluedarker-two.svg")`,
 				}}
 			>
-				<div className="container px-4 py-12 mx-auto">
+				<div className="lg:container px-4 py-12 mx-auto">
 					<motion.div
 						initial={initial}
 						variants={stagger}

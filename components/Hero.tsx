@@ -45,7 +45,7 @@ const Hero: FC<IHero> = ({
 							viewport={{once: true}}
 							initial={slideInLeftInitial}
 							whileInView={slideInRightFinish}
-							className="container px-4 lg:px-10 xl:px-0 mx-auto max-w-xl flex flex-col justify-center h-full"
+							className="lg:container px-4 lg:px-10 xl:px-0 mx-auto max-w-xl flex flex-col justify-center h-full"
 						>
 							<motion.h1
 								initial={initialTwo}
@@ -64,7 +64,7 @@ const Hero: FC<IHero> = ({
 								variants={stagger}
 								whileInView="animate"
 								viewport={{once: true}}
-								className="w-fit max-w-lg lg:max-w-full mx-auto lg:mx-0 py-3 px-4 grid sm:grid-cols-2 md:grid-cols-3 items-center justify-center lg:justify-start gap-6"
+								className="w-fit max-w-lg lg:max-w-full mx-auto lg:mx-0 py-3 px-4 grid sm:grid-cols-2 2xl:grid-cols-3 items-center justify-center lg:justify-start gap-6"
 							>
 								<div className="flex items-center justify-center lg:justify-start gap-3">
 									<Image
@@ -123,7 +123,7 @@ const Hero: FC<IHero> = ({
 									href={`${buttonLinkTwo?.url}`}
 									target={buttonLinkTwo?.target}
 									aria-label={`${buttonLinkTwo?.title}`}
-									className={`w-fit mx-auto lg:mx-0 py-4 px-6 cursor-pointer bg-primary-two hover:bg-accent-default transition-all ease-in-out duration-500 font-semibold uppercase text-lightGrey text-base text-center font-ObjectSans`}
+									className={`w-fit mx-auto lg:mx-0 py-4 px-6 cursor-pointer bg-primary-two hover:bg-accent-three transition-all ease-in-out duration-500 font-semibold uppercase text-lightGrey text-base text-center font-ObjectSans`}
 								>
 									{buttonLinkTwo?.title}
 								</Link>
@@ -145,7 +145,7 @@ const Hero: FC<IHero> = ({
 							height={backgroundImage?.mediaDetails.height}
 							className={`${
 								backgroundImage?.sourceUrl
-									? "w-full h-full max-h-[400px] md:max-h-[500px] lg:max-h-[600px] object-cover object-center"
+									? "w-full h-full max-h-[400px] md:max-h-[500px] lg:max-h-[800px] object-cover object-center"
 									: "hidden"
 							}`}
 						/>

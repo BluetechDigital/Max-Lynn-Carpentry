@@ -30,7 +30,7 @@ const Footer: FC = () => {
 				backgroundImage: `url("/svg/background/layered-peaks-haikei-blue-bluedarker.svg")`,
 			}}
 		>
-			<div className="container px-4 mx-auto">
+			<div className="lg:container px-4 mx-auto">
 				<div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-4 gap-16 lg:gap-4">
 					<motion.div
 						initial={initial}

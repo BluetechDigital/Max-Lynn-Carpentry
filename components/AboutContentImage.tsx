@@ -40,7 +40,7 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 					backgroundImage: `url("/svg/background/layered-peaks-haikei-lightgrey-white.svg")`,
 				}}
 			>
-				<div className="container m-auto flex flex-col lg:flex-row py-12 pb-4 lg:pt-28 sm:pb-10 gap-16 lg:gap-x-24">
+				<div className="lg:container m-auto flex flex-col lg:flex-row py-12 pb-4 lg:pt-28 sm:pb-10 gap-16 lg:gap-x-24">
 					<motion.div
 						initial={initial}
 						variants={stagger}

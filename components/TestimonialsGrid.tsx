@@ -30,7 +30,7 @@ const TestimonialsGrid: FC<ITestimonialsGrid> = ({
 					backgroundImage: `url("/svg/background/layeblue-peaks-haikei-white-lightgrey.svg")`,
 				}}
 			>
-				<div className="container relative m-auto flex flex-col items-center gap-6 sm:gap-12 lg:gap-20">
+				<div className="lg:container relative m-auto flex flex-col items-center gap-6 sm:gap-12 lg:gap-20">
 					<motion.div
 						initial={initial}
 						variants={stagger}

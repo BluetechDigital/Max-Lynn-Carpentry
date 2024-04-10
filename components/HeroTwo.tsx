@@ -32,7 +32,7 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 							viewport={{once: true}}
 							initial={slideInLeftInitial}
 							whileInView={slideInRightFinish}
-							className="container px-4 lg:px-10 xl:px-0 mx-auto max-w-xl flex flex-col justify-center h-full"
+							className="lg:container px-4 lg:px-10 xl:px-0 mx-auto max-w-xl flex flex-col justify-center h-full"
 						>
 							<motion.h1
 								initial={initialTwo}

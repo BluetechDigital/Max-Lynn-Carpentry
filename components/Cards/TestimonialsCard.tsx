@@ -22,7 +22,7 @@ const TestimonialsCard: FC<ITestimonialsCard> = ({
 				variants={stagger}
 				whileInView="animate"
 				viewport={{once: true}}
-				className="p-6 w-full h-full min-h-[250px] flex flex-col items-center lg:items-baseline gap-6 overflow-hidden mr-8 bg-lightGrey"
+				className="p-6 w-full h-full min-h-[250px] flex flex-col items-center lg:items-baseline gap-6 overflow-hidden bg-lightGrey"
 				style={{
 					boxShadow: "28px 28px 2px -20px rgba(0,0,0,0.1)",
 					clipPath: `polygon(95% 0, 100% 10%, 100% 100%, 0 100%, 0 0)`,
