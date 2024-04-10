@@ -44,7 +44,6 @@ const Footer: FC = () => {
 							aria-label="Max Lynn Carpentry Website Link"
 						>
 							<Image
-								priority
 								width={500}
 								height={500}
 								alt="Max Lynn Carpentry Logo"

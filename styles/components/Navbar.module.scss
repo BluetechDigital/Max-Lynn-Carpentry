@@ -48,16 +48,16 @@
 		}
 
 		::-webkit-scrollbar-track {
-			background: $primary-dark;
+			background: $accent-default;
 		}
 
 		::-webkit-scrollbar-thumb {
-			background: $primary;
+			background: $primary-default;
 			border-radius: 100px;
 
 			&:hover {
 				transition: all 0.5s;
-				background-color: $accent;
+				background-color: $accent-default;
 			}
 		}
 	}
@@ -74,12 +74,12 @@
 		line-height: 0.6;
 		border-radius: 0px;
 		text-align: center;
-		background: $accent;
+		background: $accent-default;
 		// transition: all 1s ease-in-out;
 
 		&:hover {
 			transition: all 0.2s ease-in-out;
-			background: $tertiary;
+			background: $accent-three;
 		}
 
 		span {
@@ -137,7 +137,7 @@
 		border: none;
 		line-height: 0.6;
 		text-align: center;
-		background: $accent;
+		background: $accent-default;
 		transition: all 1s ease-in-out;
 
 		span {
@@ -176,7 +176,7 @@
 		}
 
 		&:hover {
-			background: $tertiary;
+			background: $accent-three;
 			transition: all 0.2s ease-in-out;
 		}
 	}

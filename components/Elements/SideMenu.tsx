@@ -30,12 +30,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 			<nav
 				className={` ${styles.nav} ${menuActive ? styles.navReveal : "hidden"}`}
 			>
-				<div
-					className="relative flex flex-col w-full h-full px-6 py-6 overflow-x-hidden overflow-y-auto bg-accent-two border-solid border-l-8 border-primary-default bg-cover bg-center bg-no-repeat"
-					style={{
-						backgroundImage: `url("/svg/background/layered-peaks-haikei-blue-bluedarker-mobile.svg")`,
-					}}
-				>
+				<div className="relative flex flex-col w-full h-full px-6 py-6 overflow-x-hidden overflow-y-auto bg-white border-solid border-l-8 border-primary-default bg-cover bg-center bg-no-repeat">
 					<div className="flex items-center justify-between mb-8">
 						<Link
 							href="/"
@@ -46,9 +41,9 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							<Image
 								width={500}
 								height={500}
-								alt="Max Lynn Carpentry Logo White"
+								alt="Max Lynn Carpentry Logo"
+								src="/img/logos/max-lynn-carpentry-logo.jpg"
 								className="object-contain object-center w-full h-[85px]"
-								src="/svg/logos/Max-Lynn-Carpentry-Ltd-logo-white.svg"
 							/>
 						</Link>
 						<button
@@ -80,7 +75,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 														href={item?.node?.url}
 														target={`${item?.node?.target}`}
 														aria-label={`${item?.node?.label}`}
-														className="text-white text-tiny text-center tracking-[0.05rem] hover:text-accent-two transition-all ease-in-out duration-500"
+														className=" font-ObjectSans uppercase text-primary-default text-base hover:text-accent-three transition-all duration-200 ease-in-out"
 													>
 														{item?.node?.label}
 													</Link>
@@ -88,7 +83,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 														width={550}
 														height={550}
 														alt="Black Arrow Icon"
-														src="/svg/navigation-menu-dropdown-arrow-white.svg"
+														src="/svg/navigation-menu-dropdown-arrow-black.svg"
 														className={` w-[25px] h-[25px] object-contain object-center ${
 															ourServicesSublinksOpen
 																? "rotate-180"
@@ -127,7 +122,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 																						keys < 1
 																							? "border-t-[1px] border-accent-default  border-opacity-50"
 																							: "border-t-[0px]"
-																					} hover:border-primary-two hover:bg-primary-two border-y-[1px] border-accent-default border-opacity-50 text-white`}
+																					} hover:border-primary-two hover:bg-primary-two border-y-[1px] border-accent-default border-opacity-50 text-black hover:text-white transition-all duration-200 ease-in-out`}
 																				>
 																					<Link
 																						onClick={toggleMenu}
@@ -138,7 +133,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 																								: "_self"
 																						}`}
 																						aria-label={`${item?.node?.label}`}
-																						className="block p-4 text-tiny"
+																						className="block p-4 font-PlusJakartaSans text-base font-medium"
 																					>
 																						{item?.node?.label}
 																					</Link>
@@ -163,7 +158,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 														item?.node?.target ? item?.node?.target : "_self"
 													}`}
 													aria-label={`${item?.node?.label}`}
-													className="block py-4 text-tiny text-white hover:text-accent-two"
+													className="block py-4 font-ObjectSans uppercase text-primary-default text-base hover:text-accent-three transition-all duration-200 ease-in-out"
 												>
 													{item?.node?.label}
 												</Link>
@@ -184,7 +179,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							viewport={{once: true}}
 							className="flex flex-col items-center justify-between gap-4"
 						>
-							<h4 className="mb-5 text-base tracking-normal text-center uppercase md:text-left text-white">
+							<h4 className="mb-5 text-base lg:text-lg font-semibold font-ObjectSans tracking-normal text-center text-black uppercase">
 								Contact Links
 							</h4>
 							<div className="flex items-center justify-center gap-4 text-center">
@@ -276,18 +271,15 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 									</svg>
 								</Link>
 							</div>
-							<div className="flex flex-col sm:flex-row items-center justify-center w-auto gap-2 py-6 mb-10">
-								<motion.div
-									initial={initialTwo}
-									whileInView={fadeIn}
-									viewport={{once: true}}
+							<div className="flex flex-col items-center justify-center w-auto gap-4 py-6 mb-10">
+								<div
 									className={
 										globalContext?.themesOptionsContent?.email
 											? "flex items-center justify-center gap-2"
 											: "hidden"
 									}
 								>
-									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent-default sm:mr-3">
+									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent-two sm:mr-1">
 										<svg
 											width="20"
 											height="20"
@@ -297,7 +289,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										>
 											<path
 												d="M2.5 6.66669L9.0755 11.0504C9.63533 11.4236 10.3647 11.4236 10.9245 11.0504L17.5 6.66669M4.16667 15.8334H15.8333C16.7538 15.8334 17.5 15.0872 17.5 14.1667V5.83335C17.5 4.91288 16.7538 4.16669 15.8333 4.16669H4.16667C3.24619 4.16669 2.5 4.91288 2.5 5.83335V14.1667C2.5 15.0872 3.24619 15.8334 4.16667 15.8334Z"
-												stroke="white"
+												stroke="#ffffff"
 												strokeWidth="1.5"
 												strokeLinecap="round"
 												strokeLinejoin="round"
@@ -305,34 +297,31 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										</svg>
 									</div>
 									<Link
+										className="font-medium text-base tracking-wide text-black hover:text-primary-default"
 										href={`mailto:${globalContext?.themesOptionsContent?.email}`}
 										aria-label={`${globalContext?.themesOptionsContent?.email}`}
-										className="font-medium text-tiny tracking-wide text-white hover:text-accent-default"
 									>
 										{globalContext?.themesOptionsContent?.email}
 									</Link>
-								</motion.div>
-								<motion.div
-									initial={initialTwo}
-									whileInView={fadeIn}
-									viewport={{once: true}}
+								</div>
+								<div
 									className={
 										globalContext?.themesOptionsContent?.emailTwo
 											? "flex items-center justify-center gap-2"
 											: "hidden"
 									}
 								>
-									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent-default sm:mr-3">
+									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent-two sm:mr-1">
 										<svg
 											width="20"
 											height="20"
-											viewBox="0 0 20 20"
 											fill="none"
+											viewBox="0 0 20 20"
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
 												d="M2.5 6.66669L9.0755 11.0504C9.63533 11.4236 10.3647 11.4236 10.9245 11.0504L17.5 6.66669M4.16667 15.8334H15.8333C16.7538 15.8334 17.5 15.0872 17.5 14.1667V5.83335C17.5 4.91288 16.7538 4.16669 15.8333 4.16669H4.16667C3.24619 4.16669 2.5 4.91288 2.5 5.83335V14.1667C2.5 15.0872 3.24619 15.8334 4.16667 15.8334Z"
-												stroke="white"
+												stroke="#ffffff"
 												strokeWidth="1.5"
 												strokeLinecap="round"
 												strokeLinejoin="round"
@@ -340,13 +329,93 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										</svg>
 									</div>
 									<Link
+										className="font-medium text-base tracking-wide text-black hover:text-primary-default"
 										href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
 										aria-label={`${globalContext?.themesOptionsContent?.emailTwo}`}
-										className="font-medium text-tiny tracking-wide text-white hover:text-accent-default"
 									>
 										{globalContext?.themesOptionsContent?.emailTwo}
 									</Link>
-								</motion.div>
+								</div>
+								<div
+									className={
+										globalContext?.themesOptionsContent?.phoneNumber
+											? "flex items-center justify-center gap-2"
+											: "hidden"
+									}
+								>
+									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent-two sm:mr-1">
+										<svg
+											viewBox="0 0 24 24"
+											fill="none"
+											className="w-5 h-5"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												{" "}
+												<path
+													d="M14.5 6.5C15.2372 6.64382 15.9689 6.96892 16.5 7.5C17.0311 8.03108 17.3562 8.76284 17.5 9.5M15 3C16.5315 3.17014 17.9097 3.91107 19 5C20.0903 6.08893 20.8279 7.46869 21 9M20.9995 16.4767V19.1864C21.0037 20.2223 20.0723 21.0873 19.0265 20.9929C10.0001 21 3.00006 13.935 3.00713 4.96919C2.91294 3.92895 3.77364 3.00106 4.80817 3.00009H7.52331C7.96253 2.99577 8.38835 3.151 8.72138 3.43684C9.66819 4.24949 10.2772 7.00777 10.0429 8.10428C9.85994 8.96036 8.99696 9.55929 8.41026 10.1448C9.69864 12.4062 11.5747 14.2785 13.8405 15.5644C14.4272 14.9788 15.0274 14.1176 15.8851 13.935C16.9855 13.7008 19.7615 14.3106 20.5709 15.264C20.858 15.6021 21.0105 16.0337 20.9995 16.4767Z"
+													stroke="#ffffff"
+													strokeWidth="1.5"
+													strokeLinecap="round"
+													strokeLinejoin="round"
+												></path>{" "}
+											</g>
+										</svg>
+									</div>
+									<Link
+										className="font-medium text-base tracking-wide text-black hover:text-primary-default"
+										href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
+										aria-label={`${globalContext?.themesOptionsContent?.phoneNumber}`}
+									>
+										{globalContext?.themesOptionsContent?.phoneNumber}
+									</Link>
+								</div>
+								<div
+									className={
+										globalContext?.themesOptionsContent?.phoneNumberTwo
+											? "flex items-center justify-center gap-2"
+											: "hidden"
+									}
+								>
+									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent-two sm:mr-1">
+										<svg
+											viewBox="0 0 24 24"
+											fill="none"
+											className="w-5 h-5"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												{" "}
+												<path
+													d="M14.5 6.5C15.2372 6.64382 15.9689 6.96892 16.5 7.5C17.0311 8.03108 17.3562 8.76284 17.5 9.5M15 3C16.5315 3.17014 17.9097 3.91107 19 5C20.0903 6.08893 20.8279 7.46869 21 9M20.9995 16.4767V19.1864C21.0037 20.2223 20.0723 21.0873 19.0265 20.9929C10.0001 21 3.00006 13.935 3.00713 4.96919C2.91294 3.92895 3.77364 3.00106 4.80817 3.00009H7.52331C7.96253 2.99577 8.38835 3.151 8.72138 3.43684C9.66819 4.24949 10.2772 7.00777 10.0429 8.10428C9.85994 8.96036 8.99696 9.55929 8.41026 10.1448C9.69864 12.4062 11.5747 14.2785 13.8405 15.5644C14.4272 14.9788 15.0274 14.1176 15.8851 13.935C16.9855 13.7008 19.7615 14.3106 20.5709 15.264C20.858 15.6021 21.0105 16.0337 20.9995 16.4767Z"
+													stroke="#ffffff"
+													strokeWidth="1.5"
+													strokeLinecap="round"
+													strokeLinejoin="round"
+												></path>{" "}
+											</g>
+										</svg>
+									</div>
+									<Link
+										className="font-medium text-base tracking-wide text-black hover:text-primary-default"
+										href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
+										aria-label={`${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
+									>
+										{globalContext?.themesOptionsContent?.phoneNumberTwo}
+									</Link>
+								</div>
 							</div>
 						</motion.div>
 					</div>
