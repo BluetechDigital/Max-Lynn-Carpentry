@@ -241,12 +241,13 @@ const RequestAppointmentForm: FC<IRequestAppointmentForm> = ({
 										</span>
 									</Link>
 									<Link
+										href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
+										aria-label={`${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
 										className={
 											globalContext?.themesOptionsContent?.phoneNumberTwo
 												? "flex items-center gap-3 text-tiny sm:text-base text-center sm:text-left"
 												: "hidden"
 										}
-										href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
 									>
 										<span className="font-semibold uppercase font-ObjectSans">
 											Office:

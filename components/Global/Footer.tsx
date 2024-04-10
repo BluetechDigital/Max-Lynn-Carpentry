@@ -63,7 +63,7 @@ const Footer: FC = () => {
 									(item: any, keys: number) => (
 										<Fragment key={keys}>
 											<Image
-												alt={item?.altText}
+												alt={`${item?.altText}`}
 												src={item?.sourceUrl}
 												width={item?.mediaDetails.width}
 												height={item?.mediaDetails.height}

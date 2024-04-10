@@ -12,8 +12,9 @@ const BackHoverButton: FC<IBackHoverButton> = ({link}) => {
 			<div className="absolute items-center justify-center hidden w-full h-full xl:flex">
 				<div className="fixed left-10 z-10 top-[9rem] flex justify-center">
 					<Link
-						target=""
+						target="_self"
 						href={`${link}`}
+						aria-label={`back to the top Button`}
 						className={
 							styles.backHoverButton +
 							" flex bg-accent-two py-2 px-4 text-white uppercase text-sm hover:bg-accent-two transition-all duration-500 ease-in-out"

@@ -103,7 +103,7 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 									/>
 								</div>
 								<Image
-									alt={checkatrade?.altText}
+									alt={`${checkatrade?.altText}`}
 									src={checkatrade?.sourceUrl}
 									width={checkatrade?.mediaDetails.width}
 									height={checkatrade?.mediaDetails.height}
@@ -123,8 +123,8 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 						className="w-full lg:w-[35%] relative flex flex-col items-center lg:items-baseline justify-center"
 					>
 						<Image
-							alt={image?.altText}
 							src={image?.sourceUrl}
+							alt={`${image?.altText}`}
 							width={image?.mediaDetails?.width}
 							height={image?.mediaDetails?.height}
 							className={
@@ -140,8 +140,8 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 								viewport={{once: true}}
 							>
 								<Image
-									alt={contentBox?.icon?.altText}
 									src={contentBox?.icon?.sourceUrl}
+									alt={`${contentBox?.icon?.altText}`}
 									width={contentBox?.icon?.mediaDetails?.width}
 									height={contentBox?.icon?.mediaDetails?.height}
 									className={

@@ -437,7 +437,11 @@ const Navbar: FC = () => {
 						</div>
 						<div className="opacity-0 xl:hidden" />
 					</div>
-					<Link href="/contact" target="">
+					<Link
+						target="_self"
+						href="/contact"
+						aria-label={`Get a quote today Button`}
+					>
 						<div className="py-6 pl-4 pr-10 cursor-pointer bg-accent-three hover:bg-accent-two transition-all ease-in-out duration-500">
 							<span className="font-ObjectSans uppercase relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center font-semibold">
 								Get a quote today

@@ -69,6 +69,7 @@ const ErrorPage: FC<IErrorPage> = ({
 							<Link
 								href={`${buttonLink?.url}`}
 								target={buttonLink?.target}
+								aria-label={`${buttonLink?.title}`}
 								className={buttonLink?.url ? "block" : "hidden"}
 							>
 								<div className="py-6 pl-4 pr-10 cursor-pointer bg-accent-default hover:bg-tertiary-default transition-all ease-in-out duration-500">

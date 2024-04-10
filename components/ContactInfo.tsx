@@ -129,8 +129,9 @@ const ContactInfo: FC<IContactInfo> = ({title, paragraph}) => {
 									</svg>
 								</div>
 								<Link
-									className="font-medium tracking-wide text-black hover:text-tertiary-two"
 									href={`mailto:${globalContext?.themesOptionsContent?.email}`}
+									aria-label={`${globalContext?.themesOptionsContent?.email}`}
+									className="font-medium tracking-wide text-black hover:text-tertiary-two"
 								>
 									{globalContext?.themesOptionsContent?.email}
 								</Link>
@@ -163,8 +164,9 @@ const ContactInfo: FC<IContactInfo> = ({title, paragraph}) => {
 									</svg>
 								</div>
 								<Link
-									className="font-medium tracking-wide text-black hover:text-tertiary-two"
 									href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
+									aria-label={`${globalContext?.themesOptionsContent?.emailTwo}`}
+									className="font-medium tracking-wide text-black hover:text-tertiary-two"
 								>
 									{globalContext?.themesOptionsContent?.emailTwo}
 								</Link>

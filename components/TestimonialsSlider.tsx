@@ -84,9 +84,7 @@ const TestimonialsSlider: FC = () => {
 																	? "h-52 w-52 mb-6 object-cover object-center"
 																	: "hidden"
 															}
-															alt={
-																item?.node?.testimonialReview?.image?.altText
-															}
+															alt={`${item?.node?.testimonialReview?.image?.altText}`}
 															src={
 																item?.node?.testimonialReview?.image?.sourceUrl
 																	? item?.node?.testimonialReview?.image

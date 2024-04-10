@@ -233,14 +233,16 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									Phone
 								</motion.h3>
 								<Link
-									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-accent-default"
 									href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
+									aria-label={`${globalContext?.themesOptionsContent?.phoneNumber}`}
+									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-accent-default"
 								>
 									{globalContext?.themesOptionsContent?.phoneNumber}
 								</Link>
 								<Link
-									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-accent-default"
+									aria-label={`${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
 									href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
+									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-accent-default"
 								>
 									{globalContext?.themesOptionsContent?.phoneNumberTwo}
 								</Link>
@@ -287,22 +289,24 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									Email
 								</motion.h3>
 								<Link
+									href={`mailto:${globalContext?.themesOptionsContent?.email}`}
+									aria-label={`${globalContext?.themesOptionsContent?.email}`}
 									className={
 										globalContext?.themesOptionsContent?.email
 											? "block text-tiny sm:text-base text-black text-center sm:text-left hover:text-accent-default"
 											: "hidden"
 									}
-									href={`mailto:${globalContext?.themesOptionsContent?.email}`}
 								>
 									{globalContext?.themesOptionsContent?.email}
 								</Link>
 								<Link
+									href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
+									aria-label={`${globalContext?.themesOptionsContent?.emailTwo}`}
 									className={
 										globalContext?.themesOptionsContent?.email
 											? "block text-tiny sm:text-base text-black text-center sm:text-left hover:text-accent-default"
 											: "hidden"
 									}
-									href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
 								>
 									{globalContext?.themesOptionsContent?.emailTwo}
 								</Link>

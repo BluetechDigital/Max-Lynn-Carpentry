@@ -139,8 +139,8 @@ const Hero: FC<IHero> = ({
 						}
 					>
 						<Image
-							alt={backgroundImage?.altText}
 							src={backgroundImage?.sourceUrl}
+							alt={`${backgroundImage?.altText}`}
 							width={backgroundImage?.mediaDetails.width}
 							height={backgroundImage?.mediaDetails.height}
 							className={`${
@@ -167,6 +167,7 @@ const Hero: FC<IHero> = ({
 											key={keys}
 											href={`${item?.buttonLink?.url}`}
 											target={item?.buttonLink?.target}
+											aria-label={`${item?.buttonLink?.title}`}
 										>
 											<div
 												className={`p-2 pr-0 hover:bg-primary-two w-full sm:min-h-[14vh] lg:min-h-[14vh] sm:max-h-[20vh] lg:max-h-[20vh] transition-all ease-in-out duration-500 ${

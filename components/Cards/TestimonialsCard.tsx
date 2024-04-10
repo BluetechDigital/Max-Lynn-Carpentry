@@ -45,7 +45,7 @@ const TestimonialsCard: FC<ITestimonialsCard> = ({
 					<div className="flex flex-col gap-1">
 						<div className="flex items-center">
 							<Image
-								alt={image?.altText}
+								alt={`${image?.altText}`}
 								src={image?.sourceUrl}
 								width={image?.mediaDetails?.width}
 								height={image?.mediaDetails?.height}

@@ -103,8 +103,8 @@ const GettingStarted: FC<IGettingStarted> = ({
 								}
 							>
 								<Image
-									alt={stepOne?.image?.altText}
 									src={stepOne?.image?.sourceUrl}
+									alt={`${stepOne?.image?.altText}`}
 									width={stepOne?.image?.mediaDetails.width}
 									height={stepOne?.image?.mediaDetails.height}
 									className={`${
@@ -126,8 +126,8 @@ const GettingStarted: FC<IGettingStarted> = ({
 						>
 							<div className={styles.stepTwo + ` w-full lg:w-1/2 px-4`}>
 								<Image
-									alt={stepTwo?.image?.altText}
 									src={stepTwo?.image?.sourceUrl}
+									alt={`${stepTwo?.image?.altText}`}
 									width={stepTwo?.image?.mediaDetails.width}
 									height={stepTwo?.image?.mediaDetails.height}
 									className={`${
@@ -207,8 +207,8 @@ const GettingStarted: FC<IGettingStarted> = ({
 								}
 							>
 								<Image
-									alt={stepThree?.image?.altText}
 									src={stepThree?.image?.sourceUrl}
+									alt={`${stepThree?.image?.altText}`}
 									width={stepThree?.image?.mediaDetails.width}
 									height={stepThree?.image?.mediaDetails.height}
 									className={`${

@@ -37,7 +37,12 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 					}}
 				>
 					<div className="flex items-center justify-between mb-8">
-						<Link className="mr-auto text-3xl font-bold leading-none" href="/">
+						<Link
+							href="/"
+							target="_self"
+							aria-label="Max Lynn Carpentry Website Link"
+							className="mr-auto text-3xl font-bold leading-none"
+						>
 							<Image
 								width={500}
 								height={500}
@@ -73,6 +78,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 												<div className="py-4 flex flex-row justify-between items-center gap-2">
 													<Link
 														href={item?.node?.url}
+														target={`${item?.node?.target}`}
+														aria-label={`${item?.node?.label}`}
 														className="text-white text-tiny text-center tracking-[0.05rem] hover:text-accent-two transition-all ease-in-out duration-500"
 													>
 														{item?.node?.label}
@@ -183,7 +190,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							<div className="flex items-center justify-center gap-4 text-center">
 								<Link
 									className="inline-block px-1 hover:opacity-70"
-									href={`${globalContext?.themesOptionsContent?.facebookLink}`}
+									href={`${globalContext?.themesOptionsContent?.facebookLink?.url}`}
+									aria-label={`Facebook Social Media Link ${globalContext?.themesOptionsContent?.facebookLink?.title}`}
 								>
 									<svg
 										height="100%"
@@ -207,7 +215,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 								</Link>
 								<Link
 									className="inline-block px-1 hover:opacity-70"
-									href={`${globalContext?.themesOptionsContent?.twitterLink}`}
+									href={`${globalContext?.themesOptionsContent?.twitterLink?.url}`}
+									aria-label={`Twitter Social Media Link ${globalContext?.themesOptionsContent?.twitterLink?.title}`}
 								>
 									<svg
 										height="100%"
@@ -231,7 +240,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 								</Link>
 								<Link
 									className="inline-block px-1 hover:opacity-70"
-									href={`${globalContext?.themesOptionsContent?.instagramLink}`}
+									href={`${globalContext?.themesOptionsContent?.instagramLink?.url}`}
+									aria-label={`Instagram Social Media Link ${globalContext?.themesOptionsContent?.instagramLink?.title}`}
 								>
 									<svg
 										viewBox="0 0 24 24"
@@ -295,8 +305,9 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										</svg>
 									</div>
 									<Link
-										className="font-medium text-tiny tracking-wide text-white hover:text-accent-default"
 										href={`mailto:${globalContext?.themesOptionsContent?.email}`}
+										aria-label={`${globalContext?.themesOptionsContent?.email}`}
+										className="font-medium text-tiny tracking-wide text-white hover:text-accent-default"
 									>
 										{globalContext?.themesOptionsContent?.email}
 									</Link>
@@ -329,8 +340,9 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										</svg>
 									</div>
 									<Link
-										className="font-medium text-tiny tracking-wide text-white hover:text-accent-default"
 										href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
+										aria-label={`${globalContext?.themesOptionsContent?.emailTwo}`}
+										className="font-medium text-tiny tracking-wide text-white hover:text-accent-default"
 									>
 										{globalContext?.themesOptionsContent?.emailTwo}
 									</Link>

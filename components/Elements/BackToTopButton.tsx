@@ -36,7 +36,12 @@ const BackToTopButton: FC<IBackHoverButton> = ({link}) => {
 				}
 			>
 				<div className="fixed right-6 z-20 bottom-[2.5rem] flex justify-center">
-					<Link href={`${link}`} className={styles.backToTopButton}>
+					<Link
+						target="_self"
+						href={`${link}`}
+						aria-label={`Back to the previous page`}
+						className={styles.backToTopButton}
+					>
 						<span className={styles.span}>
 							<Image
 								width={550}

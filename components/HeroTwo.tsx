@@ -57,8 +57,8 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 						}
 					>
 						<Image
-							alt={backgroundImage?.altText}
 							src={backgroundImage?.sourceUrl}
+							alt={`${backgroundImage?.altText}`}
 							width={backgroundImage?.mediaDetails.width}
 							height={backgroundImage?.mediaDetails.height}
 							className={`${
