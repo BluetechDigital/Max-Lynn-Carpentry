@@ -35,6 +35,8 @@ const Maintenance: FC<IMaintenance> = ({title, paragraph, backgroundImage}) => {
 					>
 						{/* Image */}
 						<Image
+							placeholder="blur"
+							blurDataURL="blur"
 							priority={true}
 							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}

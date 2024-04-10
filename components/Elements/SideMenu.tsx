@@ -44,6 +44,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							className="mr-auto text-3xl font-bold leading-none"
 						>
 							<Image
+								placeholder="blur"
+								blurDataURL="blur"
 								width={500}
 								height={500}
 								alt="Max Lynn Carpentry Logo White"
@@ -85,6 +87,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 														{item?.node?.label}
 													</Link>
 													<Image
+														placeholder="blur"
+														blurDataURL="blur"
 														width={550}
 														height={550}
 														alt="Black Arrow Icon"

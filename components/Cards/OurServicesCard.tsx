@@ -47,6 +47,8 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 								<div className="flex items-center justify-center text-white text-tiny pl-4 w-fit h-12 bg-primary-default hover:bg-primary-two">
 									{link?.title}
 									<Image
+										placeholder="blur"
+										blurDataURL="blur"
 										width={550}
 										height={550}
 										alt="Black Arrow Icon"

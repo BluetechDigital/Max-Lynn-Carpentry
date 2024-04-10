@@ -44,6 +44,8 @@ const BackToTopButton: FC<IBackHoverButton> = ({link}) => {
 					>
 						<span className={styles.span}>
 							<Image
+								placeholder="blur"
+								blurDataURL="blur"
 								width={550}
 								height={550}
 								alt="White Arrow Icon"

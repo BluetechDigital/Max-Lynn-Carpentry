@@ -44,6 +44,8 @@ const Footer: FC = () => {
 							aria-label="Max Lynn Carpentry Website Link"
 						>
 							<Image
+								placeholder="blur"
+								blurDataURL="blur"
 								priority
 								width={500}
 								height={500}
@@ -63,6 +65,8 @@ const Footer: FC = () => {
 									(item: any, keys: number) => (
 										<Fragment key={keys}>
 											<Image
+												placeholder="blur"
+												blurDataURL="blur"
 												alt={`${item?.altText}`}
 												src={item?.sourceUrl}
 												width={item?.mediaDetails.width}
@@ -448,6 +452,8 @@ const Footer: FC = () => {
 						>
 							<span className="flex items-center justify-center lg:justify-left gap-2">
 								<Image
+									placeholder="blur"
+									blurDataURL="blur"
 									priority
 									width={500}
 									height={500}

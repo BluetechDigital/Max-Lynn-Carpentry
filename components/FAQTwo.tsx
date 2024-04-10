@@ -91,6 +91,8 @@ const FAQTwo: FC<IFAQTwo> = ({
 								className="relative"
 							>
 								<Image
+									placeholder="blur"
+									blurDataURL="blur"
 									src={image?.sourceUrl}
 									alt={`${image?.altText}`}
 									width={image?.mediaDetails?.width}

@@ -57,6 +57,8 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 						}
 					>
 						<Image
+							placeholder="blur"
+							blurDataURL="blur"
 							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}
 							width={backgroundImage?.mediaDetails.width}

@@ -64,6 +64,8 @@ const OurClients: FC<IOurClients> = ({
 									<Fragment key={keys}>
 										<div>
 											<Image
+												placeholder="blur"
+												blurDataURL="blur"
 												src={item?.image?.sourceUrl}
 												alt={`${item?.image?.altText}`}
 												width={item?.image?.mediaDetails?.width}

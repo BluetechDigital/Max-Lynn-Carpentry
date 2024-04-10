@@ -42,7 +42,7 @@ const TestimonialsGrid: FC<ITestimonialsGrid> = ({
 							initial={initial}
 							whileInView={fadeInUp}
 							viewport={{once: true}}
-							className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 leading-tight text-center text-base text-primary-default text-center"
+							className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 leading-tight text-center text-base text-primary-default"
 						>
 							{subtitle}
 						</motion.h4>
@@ -63,7 +63,7 @@ const TestimonialsGrid: FC<ITestimonialsGrid> = ({
 						contentType="TestimonialsCard"
 						numberOfItemsRenderedPerPage={12}
 						contentArray={globalContext?.testimonials}
-						tailwindStyling={`grid px-4 lg:px-16 lg:-m-4 gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4`}
+						tailwindStyling={`grid px-4 lg:px-16 lg:-m-4 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4`}
 					/>
 				</div>
 			</div>

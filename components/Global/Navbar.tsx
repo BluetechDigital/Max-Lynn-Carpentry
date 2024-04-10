@@ -65,6 +65,8 @@ const Navbar: FC = () => {
 							aria-label="Max Lynn Carpentry Website Link"
 						>
 							<Image
+								placeholder="blur"
+								blurDataURL="blur"
 								priority
 								width={500}
 								height={500}
@@ -383,6 +385,8 @@ const Navbar: FC = () => {
 																{item?.node?.label}
 															</Link>
 															<Image
+																placeholder="blur"
+																blurDataURL="blur"
 																width={550}
 																height={550}
 																alt="Black Arrow Icon"
@@ -446,6 +450,8 @@ const Navbar: FC = () => {
 							<span className="font-ObjectSans uppercase relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center font-semibold">
 								Get a quote today
 								<Image
+									placeholder="blur"
+									blurDataURL="blur"
 									width={550}
 									height={550}
 									alt="Black Arrow Icon"
