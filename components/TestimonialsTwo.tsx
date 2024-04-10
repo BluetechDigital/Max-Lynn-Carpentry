@@ -98,6 +98,15 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 									height={500}
 								/>
 							</div>
+							<div className="flex items-center justify-center lg:justify-start gap-0">
+								<Image
+									className="bg-white my-auto lg:mx-0 rounded-full p-1 w-full h-16 object-contain object-center"
+									alt={`Trustatrade reviews logo`}
+									src="/img/trustatrade-logo-proud-members.png"
+									width={500}
+									height={500}
+								/>
+							</div>
 						</motion.div>
 					</motion.div>
 					<motion.div

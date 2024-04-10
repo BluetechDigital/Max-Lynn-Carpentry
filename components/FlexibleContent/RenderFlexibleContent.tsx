@@ -28,7 +28,7 @@ const RenderFlexibleContent: FC = () => {
 		[`${FlexibleContent}_GallerySlider`]: "GallerySlider",
 		[`${FlexibleContent}_GettingStarted`]: "GettingStarted",
 		[`${FlexibleContent}_TitleParagraph`]: "TitleParagraph",
-		// [`${FlexibleContent}_Accreditations`]: "Accreditations",
+		[`${FlexibleContent}_Accreditations`]: "Accreditations",
 		[`${FlexibleContent}_TestimonialsTwo`]: "TestimonialsTwo",
 		[`${FlexibleContent}_Maintenance`]: "Global/Maintenance",
 		[`${FlexibleContent}_TestimonialsGrid`]: "TestimonialsGrid",

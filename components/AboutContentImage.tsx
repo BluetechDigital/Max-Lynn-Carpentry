@@ -27,7 +27,6 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 	paragraph,
 	contentBox,
 	reliability,
-	checkatrade,
 }) => {
 	return (
 		<>
@@ -102,17 +101,6 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 										tailwindStyling="lg:max-w-xl text-black leading-[1.75rem] text-base text-center lg:text-left"
 									/>
 								</div>
-								<Image
-									alt={`${checkatrade?.altText}`}
-									src={checkatrade?.sourceUrl}
-									width={checkatrade?.mediaDetails.width}
-									height={checkatrade?.mediaDetails.height}
-									className={`${
-										checkatrade?.sourceUrl
-											? "mx-auto xl:mx-0 w-fit h-[125px] object-contain object-center"
-											: "hidden"
-									}`}
-								/>
 							</div>
 						</motion.div>
 					</motion.div>

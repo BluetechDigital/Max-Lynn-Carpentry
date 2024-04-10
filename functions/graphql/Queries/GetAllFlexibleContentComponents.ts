@@ -116,14 +116,6 @@ export const getAllFlexibleContentComponents = async (
 													title
 													paragraph
 												}
-                								checkatrade {
-                									altText
-                									sourceUrl
-                									mediaDetails {
-                										height
-                										width
-                									}
-                								}
                 								image {
                 									altText
                 									sourceUrl
@@ -242,18 +234,8 @@ export const getAllFlexibleContentComponents = async (
             								}
 											... on ${postTypeFlexibleContent}_Accreditations {
             									fieldGroupName
-              									text
-              									textTwo
               									paragraph
               									displaySection
-              									backgroundImage {
-              									  	altText
-              									  	sourceUrl
-              									  	mediaDetails {
-              									  	  	height
-              									  	  	width
-              									  	}
-              									}
               									accreditationsGrid {
               									  	image {
               									  	  	altText

@@ -71,7 +71,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 							className="flex flex-wrap -mx-4"
 						>
 							<div className="relative w-full lg:w-1/2 px-4 order-1 lg:order-0">
-								<div className="hidden lg:block lg:absolute top-0 left-0 ml-20 mt-8">
+								<div className="hidden xl:block lg:absolute top-0 left-0 ml-20 mt-8">
 									<svg
 										className="h-20 lg:h-auto"
 										width="83"
@@ -138,7 +138,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 								/>
 							</div>
 							<div className="relative w-full lg:w-1/2 px-4">
-								<div className="hidden lg:block lg:absolute top-0 right-0 mr-20 mt-8">
+								<div className="hidden xl:block lg:absolute top-0 right-0 mr-20 mt-8">
 									<svg
 										className="h-20 lg:h-auto"
 										width="148"
@@ -175,7 +175,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 							className="flex flex-wrap -mx-4"
 						>
 							<div className="relative w-full lg:w-1/2 px-4 order-1 lg:order-0">
-								<div className="hidden lg:block lg:absolute top-0 left-0 ml-20 mt-8">
+								<div className="hidden xl:block lg:absolute top-0 left-0 ml-20 mt-8">
 									<svg
 										className="h-20 lg:h-auto"
 										width="149"

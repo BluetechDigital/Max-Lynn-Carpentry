@@ -184,15 +184,22 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							</h4>
 							<div className="flex items-center justify-center gap-4 text-center">
 								<Link
-									className="inline-block px-1 hover:opacity-70"
 									href={`${globalContext?.themesOptionsContent?.facebookLink?.url}`}
 									aria-label={`Facebook Social Media Link ${globalContext?.themesOptionsContent?.facebookLink?.title}`}
+									target={
+										globalContext?.themesOptionsContent?.facebookLink?.target
+									}
+									className={
+										globalContext?.themesOptionsContent?.facebookLink?.url
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
 								>
 									<svg
 										height="100%"
 										className="w-5 h-5"
 										style={{
-											fill: "#ffffff",
+											fill: "#111",
 											fillRule: "evenodd",
 											clipRule: "evenodd",
 											strokeLinejoin: "round",
@@ -209,15 +216,22 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 									</svg>
 								</Link>
 								<Link
-									className="inline-block px-1 hover:opacity-70"
 									href={`${globalContext?.themesOptionsContent?.twitterLink?.url}`}
 									aria-label={`Twitter Social Media Link ${globalContext?.themesOptionsContent?.twitterLink?.title}`}
+									target={
+										globalContext?.themesOptionsContent?.twitterLink?.target
+									}
+									className={
+										globalContext?.themesOptionsContent?.twitterLink?.url
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
 								>
 									<svg
 										height="100%"
 										className="w-5 h-5"
 										style={{
-											fill: "#ffffff",
+											fill: "#111",
 											fillRule: "evenodd",
 											clipRule: "evenodd",
 											strokeLinejoin: "round",
@@ -234,9 +248,59 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 									</svg>
 								</Link>
 								<Link
-									className="inline-block px-1 hover:opacity-70"
+									href={`${globalContext?.themesOptionsContent?.linkedinLink?.url}`}
+									aria-label={`Linkedin Social Media Link ${globalContext?.themesOptionsContent?.linkedinLink?.title}`}
+									target={
+										globalContext?.themesOptionsContent?.linkedinLink?.target
+									}
+									className={
+										globalContext?.themesOptionsContent?.linkedinLink?.url
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
+								>
+									<svg
+										fill="#111"
+										version="1.1"
+										id="Layer_1"
+										className="w-5 h-5"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="-143 145 512 512"
+									>
+										<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+										<g
+											id="SVGRepo_tracerCarrier"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+										></g>
+										<g id="SVGRepo_iconCarrier">
+											{" "}
+											<g>
+												{" "}
+												<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7 c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4 c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8 c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4 c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"></path>{" "}
+												<rect
+													x="-8.5"
+													y="348.4"
+													width="49.9"
+													height="159.7"
+												></rect>{" "}
+												<path d="M15.4,273c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C45.1,284.9,33.8,273,15.4,273z"></path>{" "}
+												<path d="M177.7,346.9c-28.6,0-46.5,15.6-49.8,26.6v-25.1H71.8c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4v82.6H241v-88.8C241,369.9,213.2,346.9,177.7,346.9z"></path>{" "}
+											</g>{" "}
+										</g>
+									</svg>
+								</Link>
+								<Link
 									href={`${globalContext?.themesOptionsContent?.instagramLink?.url}`}
 									aria-label={`Instagram Social Media Link ${globalContext?.themesOptionsContent?.instagramLink?.title}`}
+									target={
+										globalContext?.themesOptionsContent?.instagramLink?.target
+									}
+									className={
+										globalContext?.themesOptionsContent?.instagramLink?.url
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
 								>
 									<svg
 										viewBox="0 0 24 24"
@@ -255,17 +319,17 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 												fillRule="evenodd"
 												clipRule="evenodd"
 												d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-												fill="#ffffff"
+												fill="#111"
 											></path>{" "}
 											<path
 												d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-												fill="#ffffff"
+												fill="#111"
 											></path>{" "}
 											<path
 												fillRule="evenodd"
 												clipRule="evenodd"
 												d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-												fill="#ffffff"
+												fill="#111"
 											></path>
 										</g>
 									</svg>

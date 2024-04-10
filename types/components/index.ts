@@ -257,17 +257,7 @@ export type IGallerySlider = {
 	];
 };
 export type IAccreditations = {
-	text: string;
-	textTwo: string;
 	paragraph: string;
-	backgroundImage: {
-		altText: string;
-		sourceUrl: string;
-		mediaDetails: {
-			width: number;
-			height: number;
-		};
-	};
 	accreditationsGrid: [
 		{
 			image: {
@@ -346,14 +336,6 @@ export type IAboutContentImage = {
 	reliability: {
 		title: string;
 		paragraph: string;
-	};
-	checkatrade: {
-		altText: string;
-		sourceUrl: string;
-		mediaDetails: {
-			width: number;
-			height: number;
-		};
 	};
 	image: {
 		altText: string;
