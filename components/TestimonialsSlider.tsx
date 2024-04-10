@@ -79,8 +79,6 @@ const TestimonialsSlider: FC = () => {
 													</div>
 													<div className="relative flex flex-col lg:flex-row items-center">
 														<Image
-															placeholder="blur"
-															blurDataURL="blur"
 															className={
 																item?.node?.testimonialReview?.image?.sourceUrl
 																	? "h-52 w-52 mb-6 object-cover object-center"

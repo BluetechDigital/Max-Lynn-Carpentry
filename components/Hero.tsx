@@ -34,11 +34,11 @@ const Hero: FC<IHero> = ({
 	return (
 		<>
 			<div className={styles.hero + " relative z-50 flex flex-col"}>
-				<div className="lg:relative pt-[85px] lg:pt-[100px] lg:h-[70vh] flex flex-col lg:flex-row">
+				<div className="lg:relative pt-[85px] lg:pt-[100px] lg:h-[80vh] 2xl:h-[70vh] flex flex-col lg:flex-row">
 					<div
 						className={
 							styles.leftSideContent +
-							" px-4 xl:px-28 py-16 lg:py-8 bg-lightGrey w-full xl:w-[40%]"
+							" px-4 xl:px-10 2xl:px-28 py-16 lg:py-8 bg-lightGrey w-full xl:w-[40%]"
 						}
 					>
 						<motion.div
@@ -68,8 +68,6 @@ const Hero: FC<IHero> = ({
 							>
 								<div className="flex items-center justify-center lg:justify-start gap-3">
 									<Image
-										placeholder="blur"
-										blurDataURL="blur"
 										className="my-auto lg:mx-0 rounded-full w-10 h-10 object-cover object-center"
 										alt={`Facebook reviews logo`}
 										src="/img/facebook-logo-blue-circle-large-white.webp"
@@ -87,8 +85,6 @@ const Hero: FC<IHero> = ({
 								</div>
 								<div className="flex items-center justify-center lg:justify-start gap-3">
 									<Image
-										placeholder="blur"
-										blurDataURL="blur"
 										className="bg-white my-auto lg:mx-0 rounded-full p-1 w-10 h-10 object-cover object-center"
 										alt={`Google reviews logo`}
 										src="/svg/google-tile-logo.svg"
@@ -106,8 +102,6 @@ const Hero: FC<IHero> = ({
 								</div>
 								<div className="flex items-center justify-center lg:justify-start gap-0 basis-1/2">
 									<Image
-										placeholder="blur"
-										blurDataURL="blur"
 										className="my-auto lg:mx-0 p-1 w-full h-10 object-cover object-center"
 										alt={`Trustpilot reviews logo`}
 										src="/svg/trustpilot-logo-black.svg"
@@ -145,8 +139,6 @@ const Hero: FC<IHero> = ({
 						}
 					>
 						<Image
-							placeholder="blur"
-							blurDataURL="blur"
 							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}
 							width={backgroundImage?.mediaDetails.width}
@@ -191,8 +183,6 @@ const Hero: FC<IHero> = ({
 												}`}
 											>
 												<Image
-													placeholder="blur"
-													blurDataURL="blur"
 													alt={item?.icon?.altText}
 													src={item?.icon?.sourceUrl}
 													width={item?.icon?.mediaDetails?.width}
@@ -210,8 +200,6 @@ const Hero: FC<IHero> = ({
 														tailwindStyling="font-ObjectSans uppercase text-white font-semibold text-base leading-tight text-center"
 													/>
 													<Image
-														placeholder="blur"
-														blurDataURL="blur"
 														width={550}
 														height={550}
 														alt="Black Arrow Icon"

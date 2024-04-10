@@ -66,8 +66,6 @@ const Pagination: FC<IPagination> = ({
 								{contentType === `Gallery` ? (
 									<>
 										<Image
-											placeholder="blur"
-											blurDataURL={item?.sourceUrl}
 											src={item?.sourceUrl}
 											alt={`${item?.altText}`}
 											width={item?.mediaDetails?.width}

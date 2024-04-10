@@ -103,8 +103,6 @@ const GettingStarted: FC<IGettingStarted> = ({
 								}
 							>
 								<Image
-									placeholder="blur"
-									blurDataURL="blur"
 									src={stepOne?.image?.sourceUrl}
 									alt={`${stepOne?.image?.altText}`}
 									width={stepOne?.image?.mediaDetails.width}
@@ -128,8 +126,6 @@ const GettingStarted: FC<IGettingStarted> = ({
 						>
 							<div className={styles.stepTwo + ` w-full lg:w-1/2 px-4`}>
 								<Image
-									placeholder="blur"
-									blurDataURL="blur"
 									src={stepTwo?.image?.sourceUrl}
 									alt={`${stepTwo?.image?.altText}`}
 									width={stepTwo?.image?.mediaDetails.width}
@@ -211,8 +207,6 @@ const GettingStarted: FC<IGettingStarted> = ({
 								}
 							>
 								<Image
-									placeholder="blur"
-									blurDataURL="blur"
 									src={stepThree?.image?.sourceUrl}
 									alt={`${stepThree?.image?.altText}`}
 									width={stepThree?.image?.mediaDetails.width}

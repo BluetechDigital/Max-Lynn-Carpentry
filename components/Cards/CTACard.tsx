@@ -45,8 +45,6 @@ const CTACard: FC<ICTACard> = ({title, paragraph, buttonLink}) => {
 								<span className="relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center">
 									{buttonLink?.title}
 									<Image
-										placeholder="blur"
-										blurDataURL="blur"
 										width={550}
 										height={550}
 										alt="Black Arrow Icon"

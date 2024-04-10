@@ -17,8 +17,6 @@ const OurServicesCardTwo: FC<IOurServicesCardTwo> = ({
 		<>
 			<div className="flex flex-col p-4">
 				<Image
-					placeholder="blur"
-					blurDataURL="blur"
 					className={
 						image?.sourceUrl
 							? "bg-lightGreyTwo mx-auto rounded-full w-44 h-44 mb-6 object-cover object-center"

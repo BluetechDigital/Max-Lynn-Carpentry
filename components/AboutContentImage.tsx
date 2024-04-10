@@ -103,8 +103,6 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 									/>
 								</div>
 								<Image
-									placeholder="blur"
-									blurDataURL="blur"
 									alt={`${checkatrade?.altText}`}
 									src={checkatrade?.sourceUrl}
 									width={checkatrade?.mediaDetails.width}
@@ -125,8 +123,6 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 						className="w-full lg:w-[35%] relative flex flex-col items-center lg:items-baseline justify-center"
 					>
 						<Image
-							placeholder="blur"
-							blurDataURL="blur"
 							src={image?.sourceUrl}
 							alt={`${image?.altText}`}
 							width={image?.mediaDetails?.width}
@@ -144,8 +140,6 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 								viewport={{once: true}}
 							>
 								<Image
-									placeholder="blur"
-									blurDataURL="blur"
 									src={contentBox?.icon?.sourceUrl}
 									alt={`${contentBox?.icon?.altText}`}
 									width={contentBox?.icon?.mediaDetails?.width}

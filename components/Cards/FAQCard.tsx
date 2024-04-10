@@ -43,8 +43,6 @@ const FAQCard: FC<IFAQCard> = ({title, paragraph}) => {
 								{title}
 							</motion.h3>
 							<Image
-								placeholder="blur"
-								blurDataURL="blur"
 								width={500}
 								height={500}
 								alt="Black Arrow Icon"
