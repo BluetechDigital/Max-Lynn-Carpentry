@@ -40,7 +40,7 @@ const Footer: FC = () => {
 					>
 						<Link
 							href="/"
-							target="_blank"
+							target="_self"
 							aria-label="Max Lynn Carpentry Website Link"
 						>
 							<Image
@@ -441,7 +441,7 @@ const Footer: FC = () => {
 							tailwindStyling="max-w-full lg:max-w-lg text-black text-sm text-center lg:text-left"
 						/>
 						<Link
-							target="_blank"
+							target="_self"
 							href={`https://bluetech-digital.co.uk`}
 							aria-label="Bluetech Digital Ltd Website Link"
 							className="lg:inline-block items-center justify-center px-1 text-black hover:text-primary-default hover:underline"

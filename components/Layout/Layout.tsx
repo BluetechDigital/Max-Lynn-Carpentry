@@ -1,20 +1,20 @@
 // Imports
 import {FC} from "react";
+import {ILayout} from "@/types/components";
 
 // Components
 import Navbar from "../Global/Navbar";
 import Footer from "../Global/Footer";
 import MetaTag from "@/components/Meta/MetaTag";
-import RenderFlexibleContent from "@/components/FlexibleContent/RenderFlexibleContent";
 
-const Layout: FC = () => {
+const Layout: FC<ILayout> = ({children}) => {
 	return (
 		<>
 			<MetaTag />
 
 			<Navbar />
 
-			<RenderFlexibleContent />
+			<>{children}</>
 
 			<Footer />
 		</>

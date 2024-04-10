@@ -12,6 +12,7 @@ import {getAllPreviewFlexibleContentComponents} from "@/functions/graphql/Mutati
 
 // Components
 import Layout from "@/components/Layout/Layout";
+import RenderFlexibleContent from "@/components/FlexibleContent/RenderFlexibleContent";
 
 const dynamicPreviewPosts: NextPage<IPageContext> = ({
 	seo,
@@ -27,7 +28,9 @@ const dynamicPreviewPosts: NextPage<IPageContext> = ({
 					postTypeFlexibleContent: postTypeFlexibleContent,
 				}}
 			>
-				<Layout />
+				<Layout>
+					<RenderFlexibleContent />
+				</Layout>
 			</PageContext.Provider>
 		</>
 	);

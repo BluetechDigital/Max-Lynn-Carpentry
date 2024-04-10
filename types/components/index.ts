@@ -452,6 +452,9 @@ export type IRequestAppointmentForm = {
 };
 
 // Global
+export type ILayout = {
+	children: React.ReactNode;
+};
 export type IErrorPage = {
 	title: string;
 	paragraph: string;

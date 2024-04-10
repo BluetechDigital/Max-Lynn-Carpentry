@@ -61,7 +61,7 @@ const Navbar: FC = () => {
 					<div className="lg:container mx-auto bg-white w-full lg:w-[40%]">
 						<Link
 							href="/"
-							target="_blank"
+							target="_self"
 							aria-label="Max Lynn Carpentry Website Link"
 						>
 							<Image
