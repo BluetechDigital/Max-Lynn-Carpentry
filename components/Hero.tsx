@@ -139,6 +139,7 @@ const Hero: FC<IHero> = ({
 						}
 					>
 						<Image
+							priority
 							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}
 							width={backgroundImage?.mediaDetails.width}

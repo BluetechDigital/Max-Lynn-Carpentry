@@ -57,6 +57,7 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 						}
 					>
 						<Image
+							priority
 							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}
 							width={backgroundImage?.mediaDetails.width}
