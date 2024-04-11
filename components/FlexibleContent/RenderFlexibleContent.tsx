@@ -14,15 +14,12 @@ const RenderFlexibleContent: FC = () => {
 	// Components Key Value Pairs
 	const componentMapping: any = {
 		[`${FlexibleContent}_Cta`]: "CTA",
-		// [`${FlexibleContent}_Faq`]: "Faq",
+		[`${FlexibleContent}_Faq`]: "Faq",
 		[`${FlexibleContent}_Hero`]: "Hero",
-		// [`${FlexibleContent}_FAQTwo`]: "FAQTwo",
+		[`${FlexibleContent}_FaqTwo`]: "FAQTwo",
 		[`${FlexibleContent}_CtaTwo`]: "CTATwo",
 		[`${FlexibleContent}_Gallery`]: "Gallery",
 		[`${FlexibleContent}_HeroTwo`]: "HeroTwo",
-		// [`${FlexibleContent}_VideoBlock`]: "VideoBlock",
-		// [`${FlexibleContent}_OurClients`]: "OurClients",
-		// [`${FlexibleContent}_ContactInfo`]: "ContactInfo",
 		[`${FlexibleContent}_ContactForm`]: "ContactForm",
 		[`${FlexibleContent}_OurServices`]: "OurServices",
 		[`${FlexibleContent}_GallerySlider`]: "GallerySlider",
@@ -36,7 +33,6 @@ const RenderFlexibleContent: FC = () => {
 		[`${FlexibleContent}_AboutContentImage`]: "AboutContentImage",
 		[`${FlexibleContent}_TestimonialsSlider`]: "TestimonialsSlider",
 		[`${FlexibleContent}_TitleContentImage`]: "TitleContentImage",
-		// [`${FlexibleContent}_SkillsExperiences`]: "SkillsExperiences",
 		[`${FlexibleContent}_OurServicesGridTwo`]: "OurServicesGridTwo",
 		[`${FlexibleContent}_RequestAppointmentForm`]: "RequestAppointmentForm",
 	};

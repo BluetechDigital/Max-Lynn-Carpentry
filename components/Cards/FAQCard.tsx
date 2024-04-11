@@ -23,7 +23,7 @@ const FAQCard: FC<IFAQCard> = ({title, paragraph}) => {
 	return (
 		<>
 			<div
-				className="flex flex-col w-full border-solid border-2 border-accent-two"
+				className="flex flex-col w-full border-solid border-2 border-black"
 				style={{
 					boxShadow: "0px 30px 2px -25px rgba(0,0,0,0.1)",
 				}}

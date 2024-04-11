@@ -45,7 +45,7 @@ const Faq: FC<IFaq> = ({title, subtitle, paragraph, faqGrid}) => {
 							initial={initial}
 							whileInView={fadeInUp}
 							viewport={{once: true}}
-							className="max-w-sm mx-auto xl:mx-0 text-center xl:text-left text-base text-accent-default"
+							className="font-ObjectSans uppercase max-w-sm mx-auto lg:mx-0 text-center text-base text-primary-default"
 						>
 							{subtitle}
 						</motion.h4>
@@ -53,7 +53,7 @@ const Faq: FC<IFaq> = ({title, subtitle, paragraph, faqGrid}) => {
 							initial={initial}
 							whileInView={fadeInUp}
 							viewport={{once: true}}
-							className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-extrabold text-lg lg:text-xl"
+							className="my-3 max-w-xl mx-auto lg:mx-0 text-black uppercase font-RethinkSansExtraBold leading-tight text-center text-lg sm:text-3xl"
 						>
 							{title}
 						</motion.h3>
@@ -62,16 +62,16 @@ const Faq: FC<IFaq> = ({title, subtitle, paragraph, faqGrid}) => {
 							tailwindStyling="lg:max-w-3xl mx-auto text-black text-base text-center"
 						/>
 					</motion.div>
-					<div className="w-full relative py-0 lg:py-20 lg:py-24 overflow-hidden">
+					<div className="w-full relative py-0 lg:py-24 overflow-hidden">
 						<motion.div
 							initial={initial}
 							variants={stagger}
 							whileInView="animate"
 							viewport={{once: true}}
-							className="max-w-7xl mx-auto flex flex-wrap -mx-4 -mb-8"
+							className="max-w-7xl mx-auto flex flex-wrap lg:-mx-4 -mb-8"
 						>
 							<div className="w-full lg:w-1/3 py-8 px-4 mb-15 lg:mb-0">
-								<div className="max-w-xl mx-auto lg:mx-0 lg:max-w-full flex flex-wrap -mx-2 lg:flex-col lg:max-w-sm border-b lg:border-b-0 lg:border-r-2 border-primary-default">
+								<div className="max-w-xl mx-auto flex flex-wrap lg:-mx-2 lg:flex-col lg:max-w-sm border-b lg:border-b-0 lg:border-r-2 border-primary-default">
 									<div className="w-full lg:w-full px-2 mb-15">
 										<motion.h3
 											initial={initial}

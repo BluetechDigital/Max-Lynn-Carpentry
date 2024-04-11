@@ -29,7 +29,6 @@ const RequestAppointmentForm: FC<IRequestAppointmentForm> = ({
 	title,
 	subtitle,
 	paragraph,
-	buttonLink,
 }) => {
 	const router = useRouter();
 	const globalContext = useGlobalContext();

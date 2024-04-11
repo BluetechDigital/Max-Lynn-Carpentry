@@ -439,7 +439,7 @@ const Navbar: FC = () => {
 					</div>
 					<Link
 						target="_self"
-						href="/contact"
+						href="/#requestAppointmentForm"
 						aria-label={`Get a quote today Button`}
 					>
 						<div className="py-6 pl-4 pr-10 cursor-pointer bg-accent-three hover:bg-accent-two transition-all ease-in-out duration-500">

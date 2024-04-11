@@ -21,10 +21,10 @@ export const getAllFlexibleContentComponents = async (
 										flexibleContent {
 											... on ${postTypeFlexibleContent}_Hero {
 												fieldGroupName
+												displaySection
 												title
               									paragraph
               									ctaParagraph
-												displaySection
 												buttonLink {
                 									url
                 									title
@@ -61,9 +61,9 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_HeroTwo {
 												fieldGroupName
+												displaySection
 												title
 												paragraph
-												displaySection
 												backgroundImage {
 													altText
 													sourceUrl
@@ -82,6 +82,7 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_TitleContentImage {
             									fieldGroupName
+												displaySection
             									title
             									textTitle
             									paragraph
@@ -98,7 +99,6 @@ export const getAllFlexibleContentComponents = async (
             										title
             										target
             									}
-            									displaySection
             									displayContentOption
             									displayBackgroundColor
             								}
@@ -137,30 +137,9 @@ export const getAllFlexibleContentComponents = async (
 													}
 												}
                 							}
-											... on ${postTypeFlexibleContent}_OurClients {
-												fieldGroupName
-												title
-												subtitle
-												paragraph
-												displaySection
-												imageGrid {
-													link {
-														url
-														title
-														target
-													}
-													image {
-														altText
-														sourceUrl
-														mediaDetails {
-															height
-															width
-														}
-													}
-												}
-											}
 											... on ${postTypeFlexibleContent}_OurServices {
 												fieldGroupName
+												displaySection
 												title
 												subtitle
 												paragraph
@@ -169,7 +148,6 @@ export const getAllFlexibleContentComponents = async (
 													title
 													target
 												}
-												displaySection
 												servicesGrid {
 													card {
 														title
@@ -192,8 +170,8 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_OurServicesGridTwo {
             									fieldGroupName
-            									title
 												displaySection
+            									title
             									buttonLink {
             										url
             										title
@@ -214,28 +192,10 @@ export const getAllFlexibleContentComponents = async (
 													}
             									}
             								}
-											... on ${postTypeFlexibleContent}_SkillsExperiences {
-            									fieldGroupName
-            									title
-            									paragraph
-												displaySection
-												displayImageFullWidth
-												image {
-													altText
-													sourceUrl
-													mediaDetails {
-														height
-														width
-													}
-												}
-            									skillsExperiencesGrid {
-            										text
-            									}
-            								}
 											... on ${postTypeFlexibleContent}_Accreditations {
             									fieldGroupName
+												displaySection
               									paragraph
-              									displaySection
               									accreditationsGrid {
               									  	image {
               									  	  	altText
@@ -247,33 +207,11 @@ export const getAllFlexibleContentComponents = async (
               									  	}
               									}
             								}
-											... on ${postTypeFlexibleContent}_VideoBlock {
-												fieldGroupName
-												title
-												video
-												subtitle
-												paragraph
-												displayVideo
-												displaySection
-												buttonLink {
-													url
-													title
-													target
-												}
-												videoBackgroundImage {
-              										altText
-              										sourceUrl
-              										mediaDetails {
-              											height
-              											width
-              										}
-              									}
-											}
 											... on ${postTypeFlexibleContent}_Gallery {
 												fieldGroupName
+												displaySection
 												title
 												paragraph
-												displaySection
 												itemsDisplayedPerPage
 												gallery {
 													altText
@@ -353,22 +291,61 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_TestimonialsTwo {
 												fieldGroupName
+												displaySection
 												title
 												subtitle
-												displaySection
 											}
 											... on ${postTypeFlexibleContent}_TestimonialsGrid {
 												fieldGroupName
+												displaySection
 												title
 												subtitle
 												paragraph
+											}
+											... on ${postTypeFlexibleContent}_Faq {
+            									fieldGroupName
 												displaySection
+            									title
+            									subtitle
+            									paragraph
+            									faqGrid {
+            										card {
+            											title
+            											paragraph
+            										}
+            									}
+            								}
+											... on ${postTypeFlexibleContent}_FaqTwo {
+												fieldGroupName
+												displaySection
+												title
+												subtitle
+												paragraph
+												buttonLink {
+													url
+													title
+													target
+												}
+												image {
+													altText
+													sourceUrl
+													mediaDetails {
+														height
+														width
+													}
+												}
+												faqContent {
+													card {
+														title
+														paragraph
+													}
+												}
 											}
 											... on ${postTypeFlexibleContent}_Cta {
 												fieldGroupName
+												displaySection
 												title
 												paragraph
-												displaySection
 												buttonLink {
 													url
 													title
@@ -385,8 +362,8 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_CtaTwo {
 												fieldGroupName
-												title
 												displaySection
+												title
 												buttonLink {
 													url
 													title
@@ -403,27 +380,22 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_ContactForm {
 												fieldGroupName
+												displaySection
 												title
 												paragraph
-												displaySection
 											}
 											... on ${postTypeFlexibleContent}_RequestAppointmentForm {
 												fieldGroupName
+												displaySection
 												title
 												subtitle
 												paragraph
-												displaySection
-												buttonLink {
-													url
-													title
-													target
-												}
 											}
 											... on ${postTypeFlexibleContent}_Maintenance {
 												fieldGroupName
+												displaySection
 												title
 												paragraph
-												displaySection
 												backgroundImage {
 													altText
 													sourceUrl
@@ -435,9 +407,9 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_ErrorPageContent {
 												fieldGroupName
+												displaySection
 												title
 												paragraph
-												displaySection
 												buttonLink {
 													url
 													title
