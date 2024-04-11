@@ -463,8 +463,8 @@ const Footer: FC = () => {
 										variants={arrayLoopStaggerChildren}
 										className="flex flex-col items-center lg:items-baseline"
 									>
-										<span className="text-black transition-all duration-200 ease-in-out text-base hover:text-accent-default">
-											{item?.node?.text}
+										<span className="font-PlusJakartaSans text-black transition-all duration-200 ease-in-out text-tiny">
+											{item?.text}
 										</span>
 									</motion.div>
 								</Fragment>
