@@ -58,7 +58,7 @@ const Navbar: FC = () => {
 			<nav className={styles.navbar + ` z-[999] h-fit w-full fixed`}>
 				<NoticeInfoBanner />
 				<div className="flex p-0 bg-white">
-					<div className="lg:container mx-auto bg-white w-full lg:w-[40%]">
+					<div className="lg:container mx-auto bg-white w-full lg:w-[25%] xl:w-[20%] 2xl:w-[35%]">
 						<Link
 							href="/"
 							target="_self"
@@ -75,12 +75,12 @@ const Navbar: FC = () => {
 						</Link>
 					</div>
 					<div
-						className="flex justify-between gap-8 bg-primary-default py-2 lg:pb-5 xl:pb-12 px-6 2xl:pl-20 2xl:pr-0 w-full lg:w-[60%]"
+						className="flex justify-between gap-8 xl:gap-0 2xl:gap-8 bg-primary-default py-2 lg:pb-5 2xl:pb-12 px-6 xl:pl-16 2xl:pl-20 2xl:pr-0 w-full lg:w-[75%] xl:w-[80%] 2xl:w-[65%]"
 						style={{
 							clipPath: `polygon(3% 0, 100% 0%, 100% 100%, 0 100%)`,
 						}}
 					>
-						<div className="w-full flex justify-start gap-8 2xl:gap-12 xl:gap-12">
+						<div className="w-full flex justify-end xljustify-start gap-8 2xl:gap-12 xl:gap-12">
 							<motion.div
 								initial={initialTwo}
 								whileInView={fadeIn}

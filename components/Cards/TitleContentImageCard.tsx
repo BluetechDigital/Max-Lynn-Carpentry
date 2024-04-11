@@ -22,7 +22,7 @@ const TitleContentImageCard: FC<ITitleContentImageCard> = ({
 				whileInView="animate"
 				viewport={{once: true}}
 				className={`flex flex-col items-center ${
-					title ? "pt-2 pb-10 lg:py-10" : "py-10"
+					title ? "pt-2 pb-10 lg:py-10 xl:py-14" : "py-10"
 				} px-4 lg:items-baseline`}
 			>
 				<motion.h3
