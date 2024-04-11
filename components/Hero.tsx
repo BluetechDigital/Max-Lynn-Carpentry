@@ -164,7 +164,7 @@ const Hero: FC<IHero> = ({
 					</motion.div>
 				</div>
 				<div className="relative flex flex-row py-0 justify-start items-center lg:justify-between">
-					<ul className="hidden md:grid grid-cols-4 w-full lg:w-full xl:w-[65%] 2xl:w-[55%] absolute mb-[130px] lg:mb-[-30px] 2xl:mb-[0px] right-0 flex-row items-center justify-end">
+					<ul className="hidden md:grid grid-cols-4 w-full lg:w-full xl:w-[65%] 2xl:w-[55%] xl:absolute mb-0 xl:mb-[-30px] 2xl:mb-[0px] right-0 flex-row items-center justify-end">
 						{servicesLinks?.length > 0 ? (
 							servicesLinks?.map((item: any, keys: number) => (
 								<Fragment key={keys}>

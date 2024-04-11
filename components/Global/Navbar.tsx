@@ -75,12 +75,12 @@ const Navbar: FC = () => {
 						</Link>
 					</div>
 					<div
-						className="flex justify-between gap-8 xl:gap-0 2xl:gap-8 bg-primary-default py-2 lg:pb-5 2xl:pb-12 px-6 xl:pl-16 2xl:pl-20 2xl:pr-0 w-full lg:w-[75%] xl:w-[80%] 2xl:w-[65%]"
+						className="flex justify-between gap-8 xl:gap-0 2xl:gap-8 bg-primary-default py-2 xl:pb-5 2xl:pb-12 px-6 xl:pl-16 2xl:pl-20 2xl:pr-0 w-full lg:w-[75%] xl:w-[80%] 2xl:w-[65%]"
 						style={{
 							clipPath: `polygon(3% 0, 100% 0%, 100% 100%, 0 100%)`,
 						}}
 					>
-						<div className="w-full flex justify-end xljustify-start gap-8 2xl:gap-12 xl:gap-12">
+						<div className="w-full flex justify-end xl:justify-start gap-4 xl:gap-8 2xl:gap-12 xl:gap-12">
 							<motion.div
 								initial={initialTwo}
 								whileInView={fadeIn}
@@ -167,7 +167,7 @@ const Navbar: FC = () => {
 									</Link>
 								</div>
 							</motion.div>
-							<motion.div className="flex flex-col lg:hidden">
+							<motion.div className="lg:ml-20 flex flex-col xl:hidden">
 								<button
 									type="button"
 									onClick={toggleMenu}
@@ -347,7 +347,7 @@ const Navbar: FC = () => {
 					</div>
 				</div>
 				<div
-					className="relative lg:mt-[-15px] xl:mt-[-15px] 2xl:mt-[-35px] z-10 w-fit mx-auto hidden lg:flex items-center justify-center"
+					className="relative lg:mt-[-15px] xl:mt-[-15px] 2xl:mt-[-35px] z-10 w-fit mx-auto hidden xl:flex items-center justify-center"
 					style={{
 						boxShadow: "28px 28px 2px -20px rgba(0,0,0,0.1)",
 					}}
