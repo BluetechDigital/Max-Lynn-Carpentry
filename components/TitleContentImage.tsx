@@ -37,7 +37,7 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 	return (
 		<>
 			<div
-				className={`titleContentImage py-16 pb-2 lg:pb-0 ${backgroundColor}`}
+				className={`titleContentImage py-16 pb-2 lg:py-0 ${backgroundColor}`}
 			>
 				<div
 					className={`relative z-10 gap-4 lg:gap-x-16 p-0 mx-auto items-center justify-center flex flex-col ${

@@ -41,18 +41,23 @@ const TitleContentImageCard: FC<ITitleContentImageCard> = ({
 					content={paragraph}
 					tailwindStyling="lg:max-w-xl text-base text-center lg:text-left text-black"
 				/>
-				<div className={buttonLink?.title ? "flex mt-2" : "hidden"}>
+				<motion.div
+					initial={initial}
+					whileInView={fadeInUp}
+					viewport={{once: true}}
+					className={buttonLink?.title ? "flex mt-2" : "hidden"}
+				>
 					<Link
 						href={`${buttonLink?.url}`}
 						target={buttonLink?.target}
 						aria-label={`${buttonLink?.title}`}
-						className={`mb-8 py-4 px-6 cursor-pointer bg-primary-default hover:bg-accent-default transition-all ease-in-out duration-500 font-semibold  uppercase text-lightGrey text-base text-center font-ObjectSans ${
+						className={`mb-8 py-4 px-6 cursor-pointer bg-primary-default hover:bg-accent-three transition-all ease-in-out duration-500 font-semibold uppercase text-lightGrey text-base text-center font-ObjectSans ${
 							buttonLink?.url ? "block" : "hidden"
 						}`}
 					>
 						{buttonLink?.title}
 					</Link>
-				</div>
+				</motion.div>
 			</motion.div>
 		</>
 	);

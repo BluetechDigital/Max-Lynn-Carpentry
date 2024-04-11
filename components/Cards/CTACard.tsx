@@ -27,7 +27,7 @@ const CTACard: FC<ICTACard> = ({title, paragraph, buttonLink}) => {
 						className="flex flex-col items-center justify-between gap-10 px-0 lg:px-4 lg:flex-row"
 					>
 						<div className="flex flex-col justify-between gap-4">
-							<h3 className="max-w-xl lg:max-w-sm xl:max-w-xl mx-auto lg:mx-0 uppercase text-white text-center lg:text-left font-extrabold text-lg lg:text-xl">
+							<h3 className="max-w-xl lg:max-w-sm xl:max-w-xl mx-auto lg:mx-0 font-ObjectSans uppercase  text-white text-center lg:text-left font-extrabold text-lg lg:text-xl">
 								{title}
 							</h3>
 							<Paragraph
@@ -42,7 +42,7 @@ const CTACard: FC<ICTACard> = ({title, paragraph, buttonLink}) => {
 							className={buttonLink?.url ? "block" : "hidden"}
 						>
 							<div className="py-6 pl-4 pr-10 cursor-pointer bg-accent-default hover:bg-tertiary-default transition-all ease-in-out duration-500">
-								<span className="relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center">
+								<span className="font-ObjectSans uppercase relative flex items-center justify-center pl-4 text-lightGrey text-base text-center">
 									{buttonLink?.title}
 									<Image
 										width={550}

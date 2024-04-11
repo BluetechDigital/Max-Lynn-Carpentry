@@ -27,7 +27,7 @@ const OurServices: FC<IOurServices> = ({
 			<div
 				className={
 					styles.ourServices +
-					" relative py-12 sm:py-16 px-4 bg-white bg-cover bg-center bg-no-repeat border-y-[16px] border-r-[16px] border-solid border-primary-default"
+					" relative py-12 sm:py-16 px-4 bg-white bg-cover bg-center bg-no-repeat border-y-[16px] lg:border-r-[16px] border-solid border-primary-default"
 				}
 				style={{
 					backgroundImage: `url("/svg/background/polygon-scatter-haikei-lightgrey-two.svg")`,
