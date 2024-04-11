@@ -138,6 +138,48 @@ export type IGallery = {
 		}
 	];
 };
+export type IVideoBlock = {
+	title: string;
+	video: string;
+	subtitle: string;
+	paragraph: string;
+	displayVideo: boolean;
+	buttonLink: {
+		url: string;
+		title: string;
+		target: string;
+	};
+	videoBackgroundImage: {
+		altText: string;
+		sourceUrl: string;
+		mediaDetails: {
+			width: number;
+			height: number;
+		};
+	};
+};
+export type IOurClients = {
+	title: string;
+	subtitle: string;
+	paragraph: string;
+	imageGrid: [
+		{
+			link: {
+				url: string;
+				title: string;
+				target: string;
+			};
+			image: {
+				altText: string;
+				sourceUrl: string;
+				mediaDetails: {
+					width: number;
+					height: number;
+				};
+			};
+		}
+	];
+};
 export type IOurServices = {
 	title: string;
 	subtitle: string;
@@ -184,6 +226,10 @@ export type IMaintenance = {
 			height: number;
 		};
 	};
+};
+export type IContactInfo = {
+	title: string;
+	paragraph: string;
 };
 export type IOurLocation = {
 	title: string;
@@ -331,6 +377,24 @@ export type ITitleContentImage = {
 			height: number;
 		};
 	};
+};
+export type ISkillsExperiences = {
+	title: string;
+	paragraph: string;
+	displayImageFullWidth: boolean;
+	image: {
+		altText: string;
+		sourceUrl: string;
+		mediaDetails: {
+			width: number;
+			height: number;
+		};
+	};
+	skillsExperiencesGrid: [
+		{
+			text: string;
+		}
+	];
 };
 export type IOurServicesGridTwo = {
 	title: string;

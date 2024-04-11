@@ -460,7 +460,7 @@ const Navbar: FC = () => {
 				</div>
 
 				{/* Hidden Tablet & Mobile  Side Menu */}
-				<div className={menuActive ? "flex flex-col lg:hidden" : "hidden"}>
+				<div className={menuActive ? "flex flex-col xl:hidden" : "hidden"}>
 					<SideMenu menuActive={menuActive} setMenuActive={setMenuActive} />
 				</div>
 			</nav>

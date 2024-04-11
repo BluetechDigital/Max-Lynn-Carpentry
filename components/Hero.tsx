@@ -1,13 +1,13 @@
 // Imports
 import {
 	fadeIn,
+	stagger,
 	initial,
 	initialTwo,
 	slideInLeftInitial,
 	slideInRightFinish,
 	slideInRightInitial,
 	arrayLoopStaggerChildren,
-	stagger,
 } from "../animations/animations";
 import Link from "next/link";
 import Image from "next/image";
