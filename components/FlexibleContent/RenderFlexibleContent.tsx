@@ -1,5 +1,5 @@
 // Imports
-import {FC} from "react";
+import {FC, Fragment} from "react";
 import {usePageContext} from "@/context/pages";
 import {IPostTypeFlexibleContent} from "@/types/context";
 
@@ -36,8 +36,8 @@ const RenderFlexibleContent: FC = () => {
 		<>
 			{content?.content?.length > 0 ? (
 				content?.content?.map((item: any, keys: number) => (
-					<>
-						<section key={keys}>
+					<Fragment key={keys}>
+						<section>
 							{item?.fieldGroupName === `${FlexibleContent}_Hero` &&
 							item?.displaySection ? (
 								<>
@@ -260,7 +260,7 @@ const RenderFlexibleContent: FC = () => {
 								<></>
 							)}
 						</section>
-					</>
+					</Fragment>
 				))
 			) : (
 				<></>

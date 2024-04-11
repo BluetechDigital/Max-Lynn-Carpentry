@@ -383,6 +383,7 @@ const Navbar: FC = () => {
 																{item?.node?.label}
 															</Link>
 															<Image
+																priority
 																width={550}
 																height={550}
 																alt="Black Arrow Icon"
@@ -446,6 +447,7 @@ const Navbar: FC = () => {
 							<span className="font-ObjectSans uppercase relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center font-semibold">
 								Get a quote today
 								<Image
+									priority
 									width={550}
 									height={550}
 									alt="Black Arrow Icon"

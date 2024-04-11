@@ -86,6 +86,7 @@ const GallerySlider: FC<IGallerySlider> = ({gallerySlider}) => {
 																<h3 className="font-semibold  uppercase pl-4 text-lightGrey text-tiny text-center lg:text-left">
 																	{item?.buttonLink?.title}
 																	<Image
+																		priority
 																		width={550}
 																		height={550}
 																		alt="Black Arrow Icon"

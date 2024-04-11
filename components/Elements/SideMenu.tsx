@@ -39,6 +39,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							className="mr-auto text-3xl font-bold leading-none"
 						>
 							<Image
+								priority
 								width={500}
 								height={500}
 								alt="Max Lynn Carpentry Logo"
@@ -80,6 +81,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 														{item?.node?.label}
 													</Link>
 													<Image
+														priority
 														width={550}
 														height={550}
 														alt="Black Arrow Icon"

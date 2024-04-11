@@ -76,6 +76,7 @@ const ErrorPage: FC<IErrorPage> = ({
 									<span className="relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center">
 										{buttonLink?.title}
 										<Image
+											priority
 											width={550}
 											height={550}
 											alt="Black Arrow Icon"

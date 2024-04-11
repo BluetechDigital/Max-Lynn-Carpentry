@@ -45,6 +45,7 @@ const TestimonialsCard: FC<ITestimonialsCard> = ({
 					<div className="flex flex-col gap-1">
 						<div className="flex items-center">
 							<Image
+								priority
 								alt={`${image?.altText}`}
 								src={image?.sourceUrl}
 								width={

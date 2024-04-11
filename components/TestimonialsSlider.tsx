@@ -79,6 +79,7 @@ const TestimonialsSlider: FC = () => {
 													</div>
 													<div className="relative flex flex-col lg:flex-row items-center">
 														<Image
+															priority
 															className={
 																item?.node?.testimonialReview?.image?.sourceUrl
 																	? "h-52 w-52 mb-6 object-cover object-center"
@@ -87,8 +88,7 @@ const TestimonialsSlider: FC = () => {
 															alt={`${item?.node?.testimonialReview?.image?.altText}`}
 															src={
 																item?.node?.testimonialReview?.image?.sourceUrl
-																	? item?.node?.testimonialReview?.image
-																			?.sourceUrl
+																	? `${item?.node?.testimonialReview?.image?.sourceUrl}`
 																	: `/img/logos/default-avatar-profile.jpg`
 															}
 															width={

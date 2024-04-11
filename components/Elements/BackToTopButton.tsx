@@ -44,6 +44,7 @@ const BackToTopButton: FC<IBackHoverButton> = ({link}) => {
 					>
 						<span className={styles.span}>
 							<Image
+								priority
 								width={550}
 								height={550}
 								alt="White Arrow Icon"

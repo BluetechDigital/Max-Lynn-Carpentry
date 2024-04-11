@@ -103,10 +103,19 @@ const GettingStarted: FC<IGettingStarted> = ({
 								}
 							>
 								<Image
-									src={stepOne?.image?.sourceUrl}
+									priority
 									alt={`${stepOne?.image?.altText}`}
-									width={stepOne?.image?.mediaDetails.width}
-									height={stepOne?.image?.mediaDetails.height}
+									src={stepOne?.image?.sourceUrl}
+									width={
+										stepOne?.image?.mediaDetails?.width
+											? stepOne?.image?.mediaDetails?.width
+											: 500
+									}
+									height={
+										stepOne?.image?.mediaDetails?.height
+											? stepOne?.image?.mediaDetails?.height
+											: 500
+									}
 									className={`${
 										stepOne?.image?.sourceUrl
 											? "h-[300px] lg:h-full lg:max-h-[400px] xl:max-h-[350px] lg:min-h-[300px] w-full clip-path-left object-cover object-center"
@@ -126,10 +135,19 @@ const GettingStarted: FC<IGettingStarted> = ({
 						>
 							<div className={styles.stepTwo + ` w-full lg:w-1/2 px-4`}>
 								<Image
-									src={stepTwo?.image?.sourceUrl}
+									priority
 									alt={`${stepTwo?.image?.altText}`}
-									width={stepTwo?.image?.mediaDetails.width}
-									height={stepTwo?.image?.mediaDetails.height}
+									src={stepTwo?.image?.sourceUrl}
+									width={
+										stepTwo?.image?.mediaDetails?.width
+											? stepTwo?.image?.mediaDetails?.width
+											: 500
+									}
+									height={
+										stepTwo?.image?.mediaDetails?.height
+											? stepTwo?.image?.mediaDetails?.height
+											: 500
+									}
 									className={`${
 										stepTwo?.image?.sourceUrl
 											? "h-[300px] lg:h-full lg:max-h-[400px] xl:max-h-[350px] lg:min-h-[300px] w-full clip-path-right object-cover object-center"
@@ -207,10 +225,19 @@ const GettingStarted: FC<IGettingStarted> = ({
 								}
 							>
 								<Image
-									src={stepThree?.image?.sourceUrl}
+									priority
 									alt={`${stepThree?.image?.altText}`}
-									width={stepThree?.image?.mediaDetails.width}
-									height={stepThree?.image?.mediaDetails.height}
+									src={stepThree?.image?.sourceUrl}
+									width={
+										stepThree?.image?.mediaDetails?.width
+											? stepThree?.image?.mediaDetails?.width
+											: 500
+									}
+									height={
+										stepThree?.image?.mediaDetails?.height
+											? stepThree?.image?.mediaDetails?.height
+											: 500
+									}
 									className={`${
 										stepThree?.image?.sourceUrl
 											? "h-[300px] lg:h-full lg:max-h-[400px] xl:max-h-[350px] lg:min-h-[300px] w-full clip-path-left object-cover object-center"

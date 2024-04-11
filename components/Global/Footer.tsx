@@ -44,6 +44,7 @@ const Footer: FC = () => {
 							aria-label="Max Lynn Carpentry Website Link"
 						>
 							<Image
+								priority
 								width={500}
 								height={500}
 								alt="Max Lynn Carpentry Logo"
@@ -62,10 +63,19 @@ const Footer: FC = () => {
 									(item: any, keys: number) => (
 										<Fragment key={keys}>
 											<Image
+												priority
 												alt={`${item?.altText}`}
 												src={item?.sourceUrl}
-												width={item?.mediaDetails.width}
-												height={item?.mediaDetails.height}
+												width={
+													item?.mediaDetails?.width
+														? item?.mediaDetails?.width
+														: 500
+												}
+												height={
+													item?.mediaDetails?.height
+														? item?.mediaDetails?.height
+														: 500
+												}
 												className={`${
 													item?.sourceUrl
 														? "w-[125px] h-full md:w-full md:h-full object-contain object-center"

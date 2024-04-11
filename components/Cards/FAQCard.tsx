@@ -43,6 +43,7 @@ const FAQCard: FC<IFAQCard> = ({title, paragraph}) => {
 								{title}
 							</motion.h3>
 							<Image
+								priority
 								width={500}
 								height={500}
 								alt="Black Arrow Icon"

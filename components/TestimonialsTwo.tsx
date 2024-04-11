@@ -57,6 +57,7 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 						>
 							<div className="flex items-center justify-center lg:justify-start gap-3">
 								<Image
+									priority
 									className="my-auto lg:mx-0 rounded-full w-10 h-10 object-cover object-center"
 									alt={`Facebook reviews logo`}
 									src="/img/facebook-logo-blue-circle-large-white.webp"
@@ -74,6 +75,7 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 							</div>
 							<div className="flex items-center justify-center lg:justify-start gap-3">
 								<Image
+									priority
 									className="bg-white my-auto lg:mx-0 rounded-full p-1 w-10 h-10 object-cover object-center"
 									alt={`Google reviews logo`}
 									src="/svg/google-tile-logo.svg"
@@ -91,6 +93,7 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 							</div>
 							<div className="flex items-center justify-center lg:justify-start gap-0">
 								<Image
+									priority
 									className="bg-white my-auto lg:mx-0 rounded-full p-1 w-full h-10 object-cover object-center"
 									alt={`Trustpilot reviews logo`}
 									src="/svg/trustpilot-logo-black.svg"
@@ -100,6 +103,7 @@ const TestimonialsTwo: FC<ITestimonialsTwo> = ({title, subtitle}) => {
 							</div>
 							<div className="flex items-center justify-center lg:justify-start gap-0">
 								<Image
+									priority
 									className="bg-white my-auto lg:mx-0 rounded-full p-1 w-full h-16 object-contain object-center"
 									alt={`Trustatrade reviews logo`}
 									src="/img/trustatrade-logo-proud-members.png"

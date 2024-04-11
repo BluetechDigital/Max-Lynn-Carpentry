@@ -17,13 +17,14 @@ const OurServicesCardTwo: FC<IOurServicesCardTwo> = ({
 		<>
 			<div className="flex flex-col p-4">
 				<Image
+					priority
 					className={
 						image?.sourceUrl
 							? "bg-lightGreyTwo mx-auto w-full h-28 mb-6 object-cover object-center"
 							: "hidden"
 					}
-					src={image?.sourceUrl}
 					alt={`${image?.altText}`}
+					src={image?.sourceUrl}
 					width={image?.mediaDetails?.width ? image?.mediaDetails?.width : 500}
 					height={
 						image?.mediaDetails?.height ? image?.mediaDetails?.height : 500

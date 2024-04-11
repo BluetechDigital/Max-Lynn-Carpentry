@@ -111,8 +111,9 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 						className="w-full lg:w-[35%] relative flex flex-col items-center lg:items-baseline justify-center"
 					>
 						<Image
-							src={image?.sourceUrl}
+							priority
 							alt={`${image?.altText}`}
+							src={image?.sourceUrl}
 							width={
 								image?.mediaDetails?.width ? image?.mediaDetails?.width : 500
 							}
@@ -132,8 +133,9 @@ const AboutContentImage: FC<IAboutContentImage> = ({
 								viewport={{once: true}}
 							>
 								<Image
-									src={contentBox?.icon?.sourceUrl}
+									priority
 									alt={`${contentBox?.icon?.altText}`}
+									src={contentBox?.icon?.sourceUrl}
 									width={contentBox?.icon?.mediaDetails?.width}
 									height={contentBox?.icon?.mediaDetails?.height}
 									className={

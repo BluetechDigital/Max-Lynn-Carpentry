@@ -58,10 +58,18 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 					>
 						<Image
 							priority
-							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}
-							width={backgroundImage?.mediaDetails.width}
-							height={backgroundImage?.mediaDetails.height}
+							src={backgroundImage?.sourceUrl}
+							width={
+								backgroundImage?.mediaDetails?.width
+									? backgroundImage?.mediaDetails?.width
+									: 500
+							}
+							height={
+								backgroundImage?.mediaDetails?.height
+									? backgroundImage?.mediaDetails?.height
+									: 500
+							}
 							className={`${
 								backgroundImage?.sourceUrl
 									? "w-full h-full max-h-[400px] md:max-h-[500px] lg:max-h-[600px] object-cover object-center"

@@ -68,6 +68,7 @@ const Hero: FC<IHero> = ({
 							>
 								<div className="flex items-center justify-center lg:justify-start gap-3">
 									<Image
+										priority
 										className="my-auto lg:mx-0 rounded-full w-10 h-10 object-cover object-center"
 										alt={`Facebook reviews logo`}
 										src="/img/facebook-logo-blue-circle-large-white.webp"
@@ -85,6 +86,7 @@ const Hero: FC<IHero> = ({
 								</div>
 								<div className="flex items-center justify-center lg:justify-start gap-3">
 									<Image
+										priority
 										className="bg-white my-auto lg:mx-0 rounded-full p-1 w-10 h-10 object-cover object-center"
 										alt={`Google reviews logo`}
 										src="/svg/google-tile-logo.svg"
@@ -102,6 +104,7 @@ const Hero: FC<IHero> = ({
 								</div>
 								<div className="flex items-center justify-center lg:justify-start gap-0 basis-1/2">
 									<Image
+										priority
 										className="my-auto lg:mx-0 p-1 w-full h-10 object-cover object-center"
 										alt={`Trustpilot reviews logo`}
 										src="/svg/trustpilot-logo-black.svg"
@@ -140,10 +143,18 @@ const Hero: FC<IHero> = ({
 					>
 						<Image
 							priority
-							src={backgroundImage?.sourceUrl}
 							alt={`${backgroundImage?.altText}`}
-							width={backgroundImage?.mediaDetails.width}
-							height={backgroundImage?.mediaDetails.height}
+							src={backgroundImage?.sourceUrl}
+							width={
+								backgroundImage?.mediaDetails?.width
+									? backgroundImage?.mediaDetails?.width
+									: 500
+							}
+							height={
+								backgroundImage?.mediaDetails?.height
+									? backgroundImage?.mediaDetails?.height
+									: 500
+							}
 							className={`${
 								backgroundImage?.sourceUrl
 									? "w-full h-full max-h-[400px] md:max-h-[500px] lg:max-h-[800px] object-cover object-center"
@@ -184,10 +195,19 @@ const Hero: FC<IHero> = ({
 												}`}
 											>
 												<Image
-													alt={item?.icon?.altText}
+													priority
+													alt={`${item?.icon?.altText}`}
 													src={item?.icon?.sourceUrl}
-													width={item?.icon?.mediaDetails?.width}
-													height={item?.icon?.mediaDetails?.height}
+													width={
+														item?.icon?.mediaDetails?.width
+															? item?.icon?.mediaDetails?.width
+															: 500
+													}
+													height={
+														item?.icon?.mediaDetails?.height
+															? item?.icon?.mediaDetails?.height
+															: 500
+													}
 													className={
 														item?.icon?.sourceUrl
 															? `block object-contain object-center w-full h-[50px] lg:h-[60px] mb-6`
@@ -201,6 +221,7 @@ const Hero: FC<IHero> = ({
 														tailwindStyling="font-ObjectSans uppercase text-white font-semibold text-base leading-tight text-center"
 													/>
 													<Image
+														priority
 														width={550}
 														height={550}
 														alt="Black Arrow Icon"

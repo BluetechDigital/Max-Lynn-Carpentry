@@ -35,11 +35,19 @@ const Maintenance: FC<IMaintenance> = ({title, paragraph, backgroundImage}) => {
 					>
 						{/* Image */}
 						<Image
-							priority={true}
-							src={backgroundImage?.sourceUrl}
+							priority
 							alt={`${backgroundImage?.altText}`}
-							width={backgroundImage?.mediaDetails?.width}
-							height={backgroundImage?.mediaDetails?.height}
+							src={backgroundImage?.sourceUrl}
+							width={
+								backgroundImage?.mediaDetails?.width
+									? backgroundImage?.mediaDetails?.width
+									: 500
+							}
+							height={
+								backgroundImage?.mediaDetails?.height
+									? backgroundImage?.mediaDetails?.height
+									: 500
+							}
 							className="object-cover object-center w-full h-full"
 						/>
 						<div className="absolute top-0 h-screen bottom-0 left-0 w-full opacity-90 bg-gradient-to-b from-blue-dark from-5% via-blue-dark via-10% to-blue-dark to-100%" />

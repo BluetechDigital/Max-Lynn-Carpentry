@@ -47,7 +47,7 @@ const Accreditations: FC<IAccreditations> = ({
 						viewport={{once: true}}
 						initial={slideInRightInitial}
 						whileInView={slideInRightFinish}
-						className="grid gap-4 grid-cols-2 gap-10 lg:grid-cols-3 py-0 lg:py-6 items-center justify-center"
+						className="grid grid-cols-2 gap-10 lg:grid-cols-3 py-0 lg:py-6 items-center justify-center"
 					>
 						{accreditationsGrid?.length > 0 ? (
 							accreditationsGrid?.map((item: any, keys: number) => (
@@ -60,8 +60,9 @@ const Accreditations: FC<IAccreditations> = ({
 										variants={arrayLoopStaggerChildren}
 									>
 										<Image
-											src={item?.image?.sourceUrl}
+											priority
 											alt={`${item?.image?.altText}`}
+											src={item?.image?.sourceUrl}
 											width={
 												item?.image?.mediaDetails?.width
 													? item?.image?.mediaDetails?.width
