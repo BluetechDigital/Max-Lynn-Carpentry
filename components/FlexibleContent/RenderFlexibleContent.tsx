@@ -66,11 +66,8 @@ const RenderFlexibleContent: FC = () => {
 						className={item?.displaySection ? "block" : "hidden"}
 					>
 						{componentMap[item?.fieldGroupName] && (
-							// Check if the field group name exists in componentMap
 							<Fragment>
-								{/* Render the corresponding component with dynamic props */}
 								{React.createElement(componentMap[item?.fieldGroupName], {
-									// Pass dynamic props based on fieldGroupName
 									...item,
 								})}
 							</Fragment>
