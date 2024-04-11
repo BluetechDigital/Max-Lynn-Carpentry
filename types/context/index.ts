@@ -143,6 +143,11 @@ export type IThemesOptionsContent = {
 		title: string;
 		target: string;
 	};
+	locations: [
+		{
+			text: string;
+		}
+	];
 	certificationsGallery: [
 		{
 			altText: string;

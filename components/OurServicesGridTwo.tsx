@@ -37,7 +37,7 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 							initial={initial}
 							whileInView={fadeInUp}
 							viewport={{once: true}}
-							className="my-3 max-w-xl mx-auto lg:mx-0 text-black uppercase font-RethinkSansExtraBold leading-tight text-center text-lg sm:text-3xl"
+							className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-extrabold text-lg lg:text-xl"
 						>
 							{title}
 						</motion.h3>
@@ -67,10 +67,10 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 					</div>
 					<Link
 						href={`${buttonLink?.url}`}
-						aria-label={`${buttonLink?.title}`}
 						target={buttonLink?.target}
+						aria-label={`${buttonLink?.title}`}
 						className={`w-fit mx-auto lg:mx-0 py-4 px-6 cursor-pointer bg-primary-two hover:bg-accent-three transition-all ease-in-out duration-500 font-semibold uppercase text-lightGrey text-base text-center font-ObjectSans ${
-							buttonLink?.url ? "lg:block" : "lg:hidden"
+							buttonLink?.url ? "block" : "hidden"
 						}`}
 					>
 						{buttonLink?.title}

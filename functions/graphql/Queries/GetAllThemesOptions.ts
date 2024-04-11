@@ -40,6 +40,9 @@ export const getThemesOptionsContent = async () => {
 									title
 									target
 								}
+								locations {
+									text
+								}
 								displayNoticeBanner
 								noticeBannerTextarea
 								certificationsGallery {

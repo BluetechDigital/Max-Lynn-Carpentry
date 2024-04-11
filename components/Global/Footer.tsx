@@ -440,35 +440,30 @@ const Footer: FC = () => {
 						</div>
 					</div>
 				</div>
-				<ul className="flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row items-center justify-center lg:justify-start gap-2 py-2">
-					{/* {globalContext?.locationsLinks?.length > 0 ? (
-						globalContext?.locationsLinks?.map((item: any, keys: number) => (
-							<Fragment key={keys}>
-								<motion.li
-									custom={keys}
-									initial={initial}
-									whileInView="animate"
-									viewport={{once: true}}
-									variants={arrayLoopStaggerChildren}
-									className="flex flex-col items-center lg:items-baseline"
-								>
-									<Link
-										href={`${item?.node?.url}`}
-													target={`${
-														item?.node?.target ? item?.node?.target : "_self"
-													}`}
-													aria-label={`${item?.node?.label}`}
-										className="text-black transition-all duration-200 ease-in-out text-base hover:text-accent-default"
+				<div className="flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row items-center justify-center lg:justify-start gap-2 py-2">
+					{globalContext?.themesOptionsContent?.locations?.length > 0 ? (
+						globalContext?.themesOptionsContent?.locations?.map(
+							(item: any, keys: number) => (
+								<Fragment key={keys}>
+									<motion.div
+										custom={keys}
+										initial={initial}
+										whileInView="animate"
+										viewport={{once: true}}
+										variants={arrayLoopStaggerChildren}
+										className="flex flex-col items-center lg:items-baseline"
 									>
-										{item?.node?.label}
-									</Link>
-								</motion.li>
-							</Fragment>
-						))
+										<span className="text-black transition-all duration-200 ease-in-out text-base hover:text-accent-default">
+											{item?.node?.text}
+										</span>
+									</motion.div>
+								</Fragment>
+							)
+						)
 					) : (
 						<></>
-					)} */}
-				</ul>
+					)}
+				</div>
 				<div className="border-b border-primary-default my-2 opacity-50" />
 				<div className="flex flex-col-reverse items-center justify-between py-4 m-0 lg:-my-6 lg:flex-row">
 					<motion.div
