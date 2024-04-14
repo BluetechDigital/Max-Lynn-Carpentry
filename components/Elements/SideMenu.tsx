@@ -44,7 +44,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 								height={500}
 								alt="Max Lynn Carpentry Logo"
 								src="/img/logos/max-lynn-carpentry-logo.jpg"
-								className="object-contain object-center w-full h-[85px]"
+								className="object-contain object-center w-[105px] h-[85px]"
 							/>
 						</Link>
 						<button
