@@ -454,10 +454,6 @@ export type IPagination = {
 	tailwindStyling: string;
 	numberOfItemsRenderedPerPage: number;
 };
-export type IDynamicComponentProps = {
-	componentName: string;
-	[key: string]: any;
-};
 
 // Cards
 export type ICTACard = {

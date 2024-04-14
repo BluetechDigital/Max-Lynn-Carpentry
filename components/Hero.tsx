@@ -34,11 +34,11 @@ const Hero: FC<IHero> = ({
 	return (
 		<>
 			<div className={styles.hero + " relative z-50 flex flex-col"}>
-				<div className="lg:relative pt-[85px] lg:pt-[100px] lg:h-[75vh] 2xl:h-[70vh] flex flex-col lg:flex-row">
+				<div className="lg:relative pt-[85px] lg:pt-[100px] lg:h-[90vh] xl:h-[70vh] flex flex-col lg:flex-row">
 					<div
 						className={
 							styles.leftSideContent +
-							" px-4 xl:px-10 2xl:px-28 py-16 lg:py-8 bg-lightGrey w-full xl:w-[40%]"
+							" px-4 xl:px-10 2xl:px-28 py-16 lg:py-8 bg-lightGrey w-full lg:w-[55%] xl:w-[40%]"
 						}
 					>
 						<motion.div
@@ -138,7 +138,8 @@ const Hero: FC<IHero> = ({
 						initial={slideInRightInitial}
 						whileInView={slideInRightFinish}
 						className={
-							styles.rightSideContent + " flex flex-col w-full xl:w-[60%]"
+							styles.rightSideContent +
+							" flex flex-col w-full lg:w-[45%] xl:w-[60%]"
 						}
 					>
 						<Image
